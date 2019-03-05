@@ -36,7 +36,7 @@ a {
   text-decoration: none;
   border-bottom: 3px solid rgba(102, 204, 153, 0.2);
   font-weight: 400;
-  transition: color .3s, border-color .3s ease-in-out, ease-in-out;
+  transition: color .3s ease-in-out, border-color .3s ease-in-out;
   &:hover {
     border-color: rgba(102, 204, 153, 1);
   }
