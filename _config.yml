@@ -18,10 +18,11 @@ email: hello@gueorgui.net
 description: >- # this means to ignore newlines until "baseurl:"
   Full stack engineer available for contact work, in London + remote. Rails, React, APIs, UX, etc.
 url: "https://gueorgui.dev" # the base hostname & protocol for your site, e.g. http://example.com
-image: /assets/profile.png
+image: /assets/social.png
 twitter:
   username: gueorgui
   card: summary
+  image: /assets/social.png
 social:
   name: Gueorgui Tcherednitchenko
   links:
