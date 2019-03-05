@@ -1,0 +1,75 @@
+---
+---
+
+body {
+  background-color: #1e252d;
+  color: #aaaaaa;
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  padding: 2rem 1rem;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4 {
+  font-family: source-code-pro, monospace;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 1.6em;
+  line-height: 1.2em;
+  margin: 0.2em 0 0.5em 0;
+}
+
+p {
+  margin: 0.8em 0;
+}
+
+strong {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+a {
+  color: #66cc99;
+  text-decoration: none;
+  border-bottom: 3px solid rgba(102, 204, 153, 0.2);
+  font-weight: 400;
+  transition: color .3s, border-color .3s ease-in-out, ease-in-out;
+  &:hover {
+    border-color: rgba(102, 204, 153, 1);
+  }
+}
+
+.wrapper {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.profile-pic img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+footer {
+  color: rgb(67, 79, 93);
+  font-size: 14px;
+  a {
+    color: rgb(67, 79, 93);
+    font-weight: 300;
+    border-width: 1px;
+    &:hover {
+      color: #66cc99;
+    }
+  }
+  &:before {
+    display: block;
+    width: 6em;
+    height: 1em;
+    border-top: 3px solid rgba(67, 79, 93, 0.3);
+    content: "\a0";
+    margin-top: 4em;
+  }
+}
