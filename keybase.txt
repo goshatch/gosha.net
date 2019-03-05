@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/gueorgui
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://gueorgui.dev
+  * I am gueorgui (https://keybase.io/gueorgui) on keybase.
+  * I have a public key with fingerprint 64FC 3A48 B1A0 DB94 3847  635A 8D17 7B68 3FEB 2CA0
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101e97e3a8ff8a97ccb6aa27d4a4ff759dcee2b60f1054bb75b1b6caf8f0abc3f0d0a",
+      "fingerprint": "64fc3a48b1a0db943847635a8d177b683feb2ca0",
+      "host": "keybase.io",
+      "key_id": "8d177b683feb2ca0",
+      "kid": "0101e97e3a8ff8a97ccb6aa27d4a4ff759dcee2b60f1054bb75b1b6caf8f0abc3f0d0a",
+      "uid": "b3428a1802df2d82d6a4f3b1f8ea1619",
+      "username": "gueorgui"
+    },
+    "service": {
+      "hostname": "gueorgui.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1551827673,
+  "expire_in": 157680000,
+  "prev": "eb09dc7d4d40146f6ced1cb8cb82307ca7fc06fd5cd5a828c70ebf3e4a9f7dbc",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMIiAnicrVJdbAxRFN5SVRUlvFRINFPiQdW9M7Mzs6tBiIgoQfVBVNb93U7KzHR2
+tlS1lbZCIx6EBo1EtZog9Z8gWYmy7XqQ4KEVFU2E+P8LtQ8lwp2GF/Ho5iY399zv
++853zj29k8YGcjKeSKnGNcXmyYy7t47GA+UNYwZrJWzTGilcK1Wy0YNtpSzmRSpN
+KoUlAAFkIZ0pyODcQCGdEKwhJOtURSrnejBECWMy1gCHIKhirAcxxBpB3OAAYaJw
+QAGSCiVuWlHmOq5peUJWUzlRkGpgiADFIVUxVF1TgsigUNexZiicYZkgIIgVdsxn
+CHMYxViRaYuYuERG7f0D/599x0flsKLKBoIGkCmXqSFTTagoGHKDIajBkA+MMddC
+25hAR+PMdqNxU6orlES02iTMb6xfyV+IIsqqBddxbc8m9lbxUuF5TizsM70ax4du
+ZzjyWySCTYuKPgpGNXNjpm1JYSiQxDN9VRgMQkPWNV0plNgOx3RZxPQRQV0zgFh+
+HpEuLDEMRPmiFVQFUNW4RhiFBBtiywrQCdI5ARqnQULFl8gG0QHDXGEqCnGdYiL5
+ZVVZttDWhE8UFZoxM2ohL+4yqe52T3lmICMnkDVujD9ggZwJU/6MXYqP/545lNxx
+7lD2krLS97Vdr8/SqQ2Ld70oPtyWanmeu72s5MDseep6MG/5nbfd6dLuPZOXVtw7
+lTxBpj8etKKJDW7rws8X8DnclV579OWHd8XLdg6vO31txe25HcU1b+iW1ckbiWRB
+dt3w3sSeF1GWNX5Oc6LpavhmCzjyNLO+6Ez2wdKZfd195bP6Ox8eczZ8/b6oC5Y4
+4ebTPR8f6F++Ve8f2Of8HGzPuzex7sPII2/jovpnP761j1z8lNfatbmxYMbKtlW0
+vye/asaWbc2PczvhtFfTClsv7b5/5eXCsrk1JbmMPTLiC27kdxTV927KGkihpv35
+19OXzz9Iz1ePkyHauK4p7xc83kua
+=qTdG
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gueorgui
+
+==================================================================

@@ -17,8 +17,17 @@ title: Senior full-stack engineer
 email: hello@gueorgui.net
 description: >- # this means to ignore newlines until "baseurl:"
   Full stack engineer available for contact work, in London + remote. Rails, React, APIs, UX, etc.
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gueorgui.dev" # the base hostname & protocol for your site, e.g. http://example.com
+image: /assets/profile.png
+twitter:
+  username: gueorgui
+  card: summary
+social:
+  name: Gueorgui Tcherednitchenko
+  links:
+    - https://twitter.com/gueorgui
+    - https://github.com/gueorgui
+    - https://keybase.io/gueorgui
 twitter_username: gueorgui
 github_username:  gueorgui
 
