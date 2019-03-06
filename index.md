@@ -9,7 +9,7 @@ layout: default
 
 Senior full-stack engineer, working with the Web for over <nobr>18 years</nobr>. Rails, React, APIs, UX, infrastructure, etc.
 
-Formerly at [Moneytree](https://moneytree.jp), [AQ](http://www.aqworks.com), [COOKPAD](https://www.cookpad.com), Local Republic. Available for work in London, as with distributed teams.
+Formerly at [Moneytree](https://moneytree.jp), [AQ](http://www.aqworks.com), [COOKPAD](https://www.cookpad.com), Local Republic. Available for work in London, and with distributed teams.
 
 A [photographer](https://gueorgui.net) in a parallel life.
 
