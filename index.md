@@ -13,4 +13,4 @@ Formerly at [Moneytree](https://moneytree.jp), [AQ](http://www.aqworks.com), [CO
 
 A [photographer](https://gueorgui.net) in a parallel life.
 
-[Email](mailto:jobs@gueorgui.net), [Twitter](https://twitter.com/gueorgui), [GitHub](https://github.com/gueorgui).
+[Email](mailto:jobs@gueorgui.net), [Telegram](https://t.me/gueorgui), [Twitter](https://twitter.com/gueorgui), [GitHub](https://github.com/gueorgui).
