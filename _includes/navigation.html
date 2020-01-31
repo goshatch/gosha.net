@@ -1,0 +1,41 @@
+<header>
+  <nav>
+    <ul>
+      <li class="logo">
+        <a href="/">
+          <img src="/assets/images/logo.jpg" alt="Website logo" />
+        </a>
+      </li>
+      <li>
+        <a class="nav-item{% if page.active == 'home' %} active{% endif %}" href="/">
+          <i class="twa twa-pirate-flag"></i> Home
+        </a>
+      </li>
+      <li>
+        <a class="nav-item{% if page.active == 'projects' %} active{% endif %}" href="/projects">
+          <i class="twa twa-triangular-ruler"></i> Projects
+        </a>
+      </li>
+      <li>
+        <a class="nav-item{% if page.active == 'blog' %} active{% endif %}" href="/blog">
+          <i class="twa twa-pencil"></i> Blog
+        </a>
+      </li>
+      <li>
+        <a class="nav-item{% if page.active == 'newsletter' %} active{% endif %}" href="/newsletter">
+          <i class="twa twa-love-letter"></i> Newsletter
+        </a>
+      </li>
+      <li>
+        <a class="nav-item{% if page.active == 'about' %} active{% endif %}" href="/about">
+          <i class="twa twa-man-raising-hand-light-skin-tone"></i> About
+        </a>
+      </li>
+      <li>
+        <a class="nav-item{% if page.active == 'now' %} active{% endif %}" href="/now">
+          <i class="twa twa-high-voltage"></i> Now
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

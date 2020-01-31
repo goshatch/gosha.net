@@ -1,0 +1,29 @@
+body > footer {
+  margin: 8rem auto 4vw;
+  font-size: var(--font-small);
+
+  .back-to-top {
+    padding-left: 1rem;
+    margin-left: -1rem;
+    position: relative;
+    &::before {
+      content: '↑';
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .webring-link {
+    padding-left: 22px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 0 -2px;
+    background-image: url('https://webring.xxiivv.com/icon.black.svg');
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body > footer .webring-link {
+    background-image: url('https://webring.xxiivv.com/icon.white.svg');
+  }
+}

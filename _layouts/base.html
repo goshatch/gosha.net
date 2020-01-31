@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="/assets/stylesheets/app.css">
+  </head>
+  <body>
+    {% include navigation.html %}
+    <main class="{{ page.active }}">
+      {{ content | safe }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
