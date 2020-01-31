@@ -36,6 +36,11 @@ html {
   font-family: var(--font-sans);
 }
 
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 main {
   display: flex;
   align-items: center;
@@ -43,6 +48,9 @@ main {
   > header {
     width: 100%;
     max-width: var(--max-width);
+  }
+  .home-header {
+    font-size: 1.3rem;
   }
 }
 
@@ -133,11 +141,6 @@ figure {
     text-align: right;
     margin: 1rem 0;
   }
-}
-
-.photos {
-  text-align: center;
-  margin: 2rem 0;
 }
 
 .centered-box {

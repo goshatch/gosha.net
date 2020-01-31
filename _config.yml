@@ -22,7 +22,7 @@ title: Gueorgui Tcherednitchenko
 author: Gueorgui Tcherednitchenko
 email: gt@gueorgui.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Online portfolio for London-based photographer, designer, and engineer Gueorgui Tcherednitchenko
+  Photography, design, and software projects by Gueorgui Tcherednitchenko
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://gueorgui.net # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
