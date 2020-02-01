@@ -29,7 +29,12 @@ section.gallery {
   flex-wrap: nowrap;
   justify-content: space-between;
   margin: 2rem 0;
-  img:first-child {
-    margin-right: 4vw;
+  .home-photo {
+    &:first-child {
+      margin-right: 4vw;
+    }
+    img {
+      max-width: 100%;
+    }
   }
 }
