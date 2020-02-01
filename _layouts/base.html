@@ -1,3 +1,10 @@
+{% if layout.active %}
+  {% assign active = layout.active %}
+{% elsif page.active %}
+  {% assign active = page.active %}
+{% else %}
+  {% assign active = "" %}
+{% endif %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +13,7 @@
   </head>
   <body>
     {% include navigation.html %}
-    <main class="{{ page.active }}">
+    <main class="{{ active }}">
       {{ content | safe }}
     </main>
     {% include footer.html %}

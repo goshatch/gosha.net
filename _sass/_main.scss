@@ -1,7 +1,9 @@
 :root {
   --color-bg: #ffffff;
   --color-text: #444444;
+  --color-text-subdued: #666666;
   --color-link: #000000;
+  --color-link-subdued: #222;
   --color-highlight: #c97ae6;
   --color-link-hover: var(--color-highlight);
   --color-emphasis: #fff8e0;
@@ -18,7 +20,9 @@
   :root {
     --color-bg: #161616;
     --color-text: #aaa;
+    --color-text-subdued: #888888;
     --color-link: #fff;
+    --color-link-subdued: #bbb;
     --color-emphasis: #000000;
   }
 }

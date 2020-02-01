@@ -42,3 +42,11 @@ plugins:
 
 exclude:
   - updategitinfo.sh
+
+permalink: 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /blog/:year/:slug/

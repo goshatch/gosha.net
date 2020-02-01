@@ -1,4 +1,5 @@
 body > footer {
+  // color: var(--color-text-subdued);
   margin: 8vw auto 4vw;
   font-size: var(--font-small);
 
@@ -10,7 +11,12 @@ body > footer {
       content: '↑';
       position: absolute;
       left: 0;
+      top: -2px;
     }
+  }
+
+  a {
+    // color: var(--color-link-subdued);
   }
 
   .webring-link {

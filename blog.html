@@ -1,0 +1,15 @@
+---
+layout: base
+active: blog
+title: Blog
+---
+
+<header>
+  <h1>Blog</h1>
+</header>
+
+{% for post in site.posts %}
+  {% include post_card.html %}
+{% endfor %}
+
+<h2><i class="twa twa-cricket"></i></h2>

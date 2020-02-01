@@ -1,0 +1,16 @@
+---
+layout: base
+active: blog
+---
+<article>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <div class="meta">
+      <p>{{ page.summary }}</p>
+      <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%e %B %Y" }}</time>
+    </div>
+  </header>
+  <section>
+    {{ content }}
+  </section>
+</article>
