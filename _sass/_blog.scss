@@ -1,0 +1,43 @@
+.rss-link {
+  text-decoration: none;
+  .link-text {
+    text-decoration: underline;
+  }
+}
+
+.blog {
+  & > header {
+    h1 {
+      position: relative;
+    }
+    .rss-link {
+      font-size: 1rem;
+      font-weight: normal;
+      position: absolute;
+      right: 0;
+      bottom: 0.3rem;
+    }
+  }
+}
+
+.post-card {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 5rem auto;
+  max-width: var(--max-width);
+
+  time {
+    margin: 1rem 0;
+    font-size: var(--font-small);
+    line-height: 1.8;
+  }
+  .contents {
+    header {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-top: 0.5rem;
+    }
+  }
+}

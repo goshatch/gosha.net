@@ -5,10 +5,17 @@ title: Blog
 ---
 
 <header>
-  <h1>Blog</h1>
+  <h1>
+    Blog
+    <a href="/feed.xml" class="rss-link">
+      <span class="link-text">Subscribe via RSS</span>
+      {% include rss_logo.svg %}
+    </a>
+  </h1>
 </header>
 
-{% for post in site.posts %}
+{% assign posts = site.posts | where_exp: "item", "item.rss_only != true" %}
+{% for post in posts %}
   {% include post_card.html %}
 {% endfor %}
 

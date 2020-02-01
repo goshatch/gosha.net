@@ -6,10 +6,15 @@ active: blog
   <header>
     <h1>{{ page.title }}</h1>
     <div class="meta">
-      <p>{{ page.summary }}</p>
       <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%e %B %Y" }}</time>
     </div>
   </header>
+  {% if page.rss_only %}
+    <aside class="notice">
+      {% include rss_logo.svg %} <i class="twa twa-red-heart"></i>
+      This post is for RSS subscribers only. <a href="https://daverupert.com/2018/01/welcome-to-rss-club/">Read more about RSS Club</a>.
+    </aside>
+  {% endif %}
   <section>
     {{ content }}
   </section>

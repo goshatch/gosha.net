@@ -94,6 +94,14 @@ h1, h2, h3, h4 {
   color: var(--color-link);
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
 ul, ol {
   padding-left: 1rem;
   li {
@@ -147,6 +155,10 @@ figure {
   }
 }
 
+section[name='bio'] figure.centered {
+  margin-top: -2rem;
+}
+
 .centered-box {
   display: block;
   margin: 0 auto;
@@ -165,9 +177,14 @@ sup.reference {
 
 section, article {
   width: 100%;
-  max-width: var(--max-width);
+  // max-width: var(--max-width);
   margin: 0 auto;
 
+  header {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
   .footnotes {
     font-size: var(--font-small);
 
