@@ -1,3 +1,18 @@
+
+.project-metadata {
+  margin: 0 -1rem 1rem;
+  font-family: var(--font-mono);
+  font-size: var(--font-small);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  .metadata-item {
+    margin-right: 1rem;
+  }
+}
+
 section.gallery {
   display: grid;
   grid-template-columns: 1fr;

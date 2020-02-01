@@ -150,8 +150,13 @@ figure {
     font-size: var(--font-small);
     color: var(--color-emphasis-text);
     opacity: 0.5;
-    text-align: right;
     margin: 1rem 0;
+  }
+}
+
+main.about {
+  figure figcaption {
+    text-align: right;
   }
 }
 
