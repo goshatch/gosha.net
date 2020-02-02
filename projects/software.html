@@ -1,39 +1,6 @@
 ---
-layout: base
+layout: project_list
 active: projects
 title: Software projects
+active_category: software
 ---
-
-<header>
-  <h1>
-    Projects
-    <a href="/projects/feed.xml" class="rss-link">
-      <span class="link-text">Subscribe via RSS</span>
-      {% include rss_logo.svg %}
-    </a>
-  </h1>
-</header>
-
-<section class="projects-nav">
-  <ul>
-    <li><a href="/projects">All projects</a></li>
-    <li><a href="/projects/bookdesign">Book design</a></li>
-    <li><a href="/projects/photography">Photography</a></li>
-    <li><a href="/projects/publishing">Publishing</a></li>
-    <li><a href="/projects/software" class="active">Software</a></li>
-    <li><a href="/projects/writing">Writing</a></li>
-  </ul>
-</section>
-
-<section class="projects-grid">
-  {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Software'" %}
-  {% assign sorted_projects = filtered_projects | sort: 'date' | reverse %}
-  {% for project in sorted_projects %}
-    <a class="project-card" style="background-image: url('{{ project.featured_image }}')" href="{{ project.url }}">
-      <header>
-        <h3>{{ project.title }}</h3>
-        <p class="meta">{{ project.timespan }}</p>
-      </header>
-    </a>
-  {% endfor %}
-</section>
