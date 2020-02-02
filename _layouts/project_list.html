@@ -25,21 +25,22 @@ title: Projects
   </ul>
 </section>
 
-<section class="projects-grid">
-  {% if page.active_category == 'bookdesign' %}
-    {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Book design'" %}
-  {% elsif page.active_category == 'photography' %}
-    {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Photography'" %}
-  {% elsif page.active_category == 'publishing' %}
-    {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Publishing'" %}
-  {% elsif page.active_category == 'software' %}
-    {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Software'" %}
-  {% elsif page.active_category == 'writing' %}
-    {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Writing'" %}
-  {% else %}
-    {% assign filtered_projects = site.projects %}
-  {% endif %}
+{% if page.active_category == 'bookdesign' %}
+  {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Book design'" %}
+{% elsif page.active_category == 'photography' %}
+  {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Photography'" %}
+{% elsif page.active_category == 'publishing' %}
+  {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Publishing'" %}
+{% elsif page.active_category == 'software' %}
+  {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Software'" %}
+{% elsif page.active_category == 'writing' %}
+  {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Writing'" %}
+{% else %}
+  {% assign filtered_projects = site.projects %}
+{% endif %}
 
+{% if filtered_projects.size > 0 %}
+<section class="projects-grid">
   {% assign sorted_projects = filtered_projects | sort: 'date' | reverse %}
   {% for project in sorted_projects %}
     <a class="project-card" style="background-image: url('{{ project.featured_image }}')" href="{{ project.url }}">
@@ -50,3 +51,12 @@ title: Projects
     </a>
   {% endfor %}
 </section>
+{% else %}
+<hr/>
+<section>
+  <header>
+    <h3>Nothing here yet! <i class="twa twa-grinning-face-with-sweat"></i></h3>
+  </header>
+  <p>I'm still working on adding projects. Please check back later!</p>
+</section>
+{% endif %}
