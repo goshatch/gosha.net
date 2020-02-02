@@ -33,19 +33,6 @@ body > header > nav > ul > li a {
   }
 }
 
-@media (max-width: 480px) {
-  body > header > nav > ul {
-    text-align: left;
-  }
-  body > header > nav > ul > li {
-    display: block;
-    margin-right: 0;
-  }
-  .logo {
-    height: 4rem;
-  }
-}
-
 .logo {
   a {
     display: block;
@@ -58,5 +45,27 @@ body > header > nav > ul > li a {
     height: 100%;
     border-radius: 50%;
     margin-bottom: -1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body > header > nav > ul {
+    text-align: left;
+    position: relative;
+    margin-top: 0;
+  }
+  body > header > nav > ul > li {
+    display: block;
+    margin-right: 0;
+    width: 50%;
+    margin-left: 50%;
+  }
+  .logo {
+    height: 4rem;
+    width: 4rem;
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
