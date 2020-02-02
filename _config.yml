@@ -44,6 +44,8 @@ plugins:
 exclude:
   - updategitinfo.sh
 
+destination: build
+
 defaults:
   - scope:
       path: ""
