@@ -12,7 +12,7 @@ input[type='text'], input[type='email'] {
   }
 }
 
-button, input[type='submit'] {
+button, input[type='submit'], a.button {
   padding: 1rem;
   padding: 0.6rem;
   font-size: 1rem;
@@ -20,6 +20,7 @@ button, input[type='submit'] {
   border: none;
   color: var(--color-bg);
   border-radius: 0.3rem;
+  text-decoration: none;
 }
 
 form {

@@ -16,6 +16,7 @@
 section.gallery {
   display: grid;
   grid-template-columns: 1fr;
+  grid-column-gap: 2rem;
   max-width: 55rem;
   margin: 0 auto;
 
@@ -32,7 +33,70 @@ section.gallery {
     }
     img {
       max-width: 100%;
-      max-height: 100%;
+      max-height: 90vh;
+    }
+    &.centered {
+      text-align: center;
+    }
+  }
+
+  &.mini {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2rem;
+    figure {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  section.gallery {
+    &.mini {
+      grid-template-columns: 1fr;
+      grid-row-gap: 1rem;
+    }
+  }
+}
+
+.long-distance-us section.gallery {
+  background-color: white;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 4rem;
+  padding: 2rem 0;
+  max-width: 100%;
+  border-radius: 0.3rem;
+  figure {
+    grid-column: span 2;
+    max-height: inherit;
+    margin-bottom: 0;
+    img {
+      max-height: inherit;
+    }
+    &:nth-last-child(1):nth-child(odd) {
+      grid-column: 2 / span 2;
+    }
+  }
+}
+
+.returnees section.gallery figure {
+    &:nth-child(even) {
+      text-align: center;
+    }
+    &:nth-child(odd) {
+      text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+  .long-distance-us section.gallery {
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr;
+    figure {
+      grid-column: span 1;
+      &:nth-last-child(1):nth-child(odd) {
+        grid-column: span 1;
+      }
     }
   }
 }

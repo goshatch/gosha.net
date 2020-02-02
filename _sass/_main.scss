@@ -87,6 +87,20 @@ a:hover {
   color: var(--color-link-hover);
 }
 
+.back-to-index-link {
+  font-size: 1.5rem;
+  text-align: center;
+  a {
+    position: relative;
+    &::before {
+      content: '←';
+      position: absolute;
+      left: -1.8rem;
+      top: -0.2rem;
+    }
+  }
+}
+
 h1, h2, h3, h4 {
   line-height: 1.2;
   font-family: var(--font-sans);
