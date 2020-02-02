@@ -1,7 +1,7 @@
 ---
 layout: base
 active: projects
-title: Projects
+title: Book design projects
 ---
 
 <header>
@@ -16,8 +16,8 @@ title: Projects
 
 <section class="projects-nav">
   <ul>
-    <li><a href="/projects" class="active">All projects</a></li>
-    <li><a href="/projects/bookdesign">Book design</a></li>
+    <li><a href="/projects">All projects</a></li>
+    <li><a href="/projects/bookdesign" class="active">Book design</a></li>
     <li><a href="/projects/photography">Photography</a></li>
     <li><a href="/projects/publishing">Publishing</a></li>
     <li><a href="/projects/software">Software</a></li>
@@ -26,7 +26,8 @@ title: Projects
 </section>
 
 <section class="projects-grid">
-  {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+  {% assign filtered_projects = site.projects | where_exp: "project", "project.categories contains 'Book design'" %}
+  {% assign sorted_projects = filtered_projects | sort: 'date' | reverse %}
   {% for project in sorted_projects %}
     <a class="project-card" style="background-image: url('{{ project.featured_image }}')" href="{{ project.url }}">
       <header>

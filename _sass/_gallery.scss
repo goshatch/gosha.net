@@ -118,6 +118,29 @@ section.gallery {
   }
 }
 
+.projects-nav {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    li {
+      padding-left: 0;
+      display: inline-block;
+      line-height: 2rem;
+      a {
+        padding: 0.5rem 0.3rem;
+        border-radius: 2rem;
+        &.active {
+          padding: 0.5rem 1rem;
+          text-decoration: none;
+          background-color: var(--color-emphasis);
+          color: var(--color-highlight);
+        }
+      }
+    }
+  }
+}
+
 .projects-grid {
   margin: 2rem 0;
   display: grid;
