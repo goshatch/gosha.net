@@ -6,7 +6,11 @@ active: projects
   <h1>{{ page.title }}</h1>
   <aside class="project-metadata">
     <div class="metadata-item timespan"><i class="twa twa-hourglass-not-done"></i> {{ page.timespan | safe }}</div>
-    <div class="metadata-item tags"><i class="twa twa-label"></i> {{ page.categories | safe }}</div>
+    {% for category in page.categories %}
+      <div class="metadata-item tags">
+        <i class="twa twa-label"></i> {{ category }}
+      </div>
+    {% endfor %}
   </aside>
 </header>
 

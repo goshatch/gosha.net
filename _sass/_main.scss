@@ -134,6 +134,15 @@ aside {
   background-color: var(--color-emphasis);
   color: var(--color-emphasis-text);
   border-radius: 0.2rem;
+  max-width: var(--max-width);
+  margin: 0 -1rem;
+}
+
+@media (max-width: 480px) {
+  aside {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .meta {

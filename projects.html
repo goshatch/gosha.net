@@ -5,5 +5,25 @@ title: Projects
 ---
 
 <header>
-  <h1>Projects</h1>
+  <h1>
+    Projects
+    <a href="/projects/feed.xml" class="rss-link">
+      <span class="link-text">Subscribe via RSS</span>
+      {% include rss_logo.svg %}
+    </a>
+  </h1>
 </header>
+
+<section class="projects-grid">
+  {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+  {% for project in sorted_projects %}
+    <article class="project-card" style="background-image: url('{{ project.featured_image }}')">
+      <a href="{{ project.url }}">
+        <header>
+          <h3>{{ project.title }}</h3>
+          <p class="meta">{{ project.timespan }}</p>
+        </header>
+      </a>
+    </article>
+  {% endfor %}
+</section>
