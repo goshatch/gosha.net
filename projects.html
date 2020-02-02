@@ -17,13 +17,11 @@ title: Projects
 <section class="projects-grid">
   {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
   {% for project in sorted_projects %}
-    <article class="project-card" style="background-image: url('{{ project.featured_image }}')">
-      <a href="{{ project.url }}">
-        <header>
-          <h3>{{ project.title }}</h3>
-          <p class="meta">{{ project.timespan }}</p>
-        </header>
-      </a>
-    </article>
+    <a class="project-card" style="background-image: url('{{ project.featured_image }}')" href="{{ project.url }}">
+      <header>
+        <h3>{{ project.title }}</h3>
+        <p class="meta">{{ project.timespan }}</p>
+      </header>
+    </a>
   {% endfor %}
 </section>

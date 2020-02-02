@@ -13,7 +13,7 @@
   </head>
   <body>
     {% include navigation.html %}
-    <main class="{{ active }}">
+    <main class="{{ active }} {{ page.slug }}">
       {{ content | safe }}
     </main>
     {% include footer.html %}
