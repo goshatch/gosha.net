@@ -1,0 +1,17 @@
+name: Jekyll deploy
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@master
+      - name: Build
+        uses: gueorgui/jekyll-build-preflight@master
+        with:
+          preflight: "/bin/sh ./updategitinfo.sh"
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v2.5.1
