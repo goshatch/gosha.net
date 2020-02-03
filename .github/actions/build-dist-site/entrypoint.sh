@@ -12,7 +12,7 @@ bundle install
 
 echo "Building website..."
 /bin/sh ./updategitinfo.sh
-JEKYLL_ENV=production bundle exec jekyll build
+JEKYLL_ENV=production bundle exec jekyll build --trace
 echo "Jekyll build done"
 
 cd build
