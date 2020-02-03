@@ -4,10 +4,15 @@ set -e
 
 echo "Starting deployment..."
 # REMOTE_REPO="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-REMOTE_REPO="https://x-access-token:${PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-echo "DEBUG:"
-echo "REMOTE_REPO:" $REMOTE_REPO
-echo "REMOTE_REPO_PUSH:" $REMOTE_REPO_PUSH
+# REMOTE_REPO="https://x-access-token:${PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+SSH_DIR=/root/.ssh
+mkdir "${SSH_DIR}"
+ssh-keyscan -t rsa github.com > "${SSH_DIR}/known_hosts"
+echo "${ACTIONS_DEPLOY_KEY}" > "${SSH_DIR}/id_rsa"
+chmod 400 "${SSH_DIR}/id_rsa"
+REMOTE_REPO="git@github.com:${GITHUB_REPOSITORY}.git"
+echo "Remote repo: ${REMOTE_REPO}"
+
 git clone -b source $REMOTE_REPO repo
 cd repo
 
