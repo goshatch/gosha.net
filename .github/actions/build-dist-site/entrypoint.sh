@@ -27,7 +27,7 @@ git add .
 git commit -m "Github Actions - $(date)"
 echo "Build branch ready to go. Pushing to Github..."
 
-git push --force $REMOTE_REPO source:master
+git push --force $REMOTE_REPO master
 
 rm -rf .git
 cd ..
