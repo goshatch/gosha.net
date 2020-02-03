@@ -3,5 +3,7 @@ build
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+.DS_Store
+.BridgeSort
 vendor
 _data/git.json
