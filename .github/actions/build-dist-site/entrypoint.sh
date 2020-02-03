@@ -11,7 +11,6 @@ ssh-keyscan -t rsa github.com > "${SSH_DIR}/known_hosts"
 echo "${ACTIONS_DEPLOY_KEY}" > "${SSH_DIR}/id_rsa"
 chmod 400 "${SSH_DIR}/id_rsa"
 REMOTE_REPO="git@github.com:${GITHUB_REPOSITORY}.git"
-echo "Remote repo: ${REMOTE_REPO}"
 
 git clone -b source $REMOTE_REPO repo
 cd repo
@@ -36,7 +35,7 @@ git add .
 git commit -m "Github Actions - $(date)"
 echo "Build branch ready to go. Pushing to Github..."
 
-git push --force $REMOTE_REPO_PUSH master
+git push --force $REMOTE_REPO master
 
 rm -rf .git
 cd ..
