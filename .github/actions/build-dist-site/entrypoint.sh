@@ -3,8 +3,8 @@
 set -e
 
 echo "Starting deployment..."
-REMOTE_REPO="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-REMOTE_REPO_PUSH="https://${GITHUB_ACTOR}:${PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+# REMOTE_REPO="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+REMOTE_REPO="https://x-access-token:${PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 echo "DEBUG:"
 echo "REMOTE_REPO:" $REMOTE_REPO
 echo "REMOTE_REPO_PUSH:" $REMOTE_REPO_PUSH
