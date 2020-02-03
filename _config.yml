@@ -22,7 +22,7 @@ title: Gueorgui Tcherednitchenko
 author: Gueorgui Tcherednitchenko
 email: gt@gueorgui.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Photography, design, and software projects by Gueorgui Tcherednitchenko
+  Photography, design, writing, and software projects by Gueorgui Tcherednitchenko
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://gueorgui.net # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
@@ -33,7 +33,7 @@ meta:
   twitter_card_type: "summary"
   github_username: "gueorgui"
   mastodon: "https://merveilles.town/@gueorgui"
-  default_social_image: "/assets/images/front/where-the-story-begins-01.jpg"
+  default_social_image: "/assets/images/projects/where-the-story-begins/featured.jpg"
 
 # Build settings
 plugins:
