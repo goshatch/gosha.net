@@ -1,17 +1,11 @@
-FROM ruby:2-slim
+FROM ruby:2.6.5-buster
 LABEL author="Gueorgui Tcherednitchenko"
 LABEL version="1.0.0"
 
 ENV BUNDLER_VERSION 2.0.2
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
-    bats \
-    build-essential \
-    ca-certificates \
-    curl \
-    libffi6 \
-    make \
-    shellcheck \
+    nodejs \
     git-all \
     && gem install bundler:2.0.2 \
     && bundle config --global silence_root_warning 1
