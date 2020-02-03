@@ -15,6 +15,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/build-dist-site
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           GITHUB_REPOSITORY: $
           GITHUB_ACTOR: $
