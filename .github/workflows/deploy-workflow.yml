@@ -1,0 +1,20 @@
+# This is the name of our workflow.
+# Github will show it on its Website UI
+name: deploy
+# This configures our workflow to be triggered
+# only when we push to the master branch
+on:
+  push:
+    branches:
+      - source
+jobs:
+  build:
+    name: deploy
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/build-dist-site
+        env:
+          GITHUB_TOKEN: $
+          GITHUB_REPOSITORY: $
+          GITHUB_ACTOR: $
