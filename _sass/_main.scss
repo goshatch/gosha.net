@@ -39,6 +39,12 @@
 
 html {
   font: 18px/28px var(--font-sans);
+  -webkit-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
+  -moz-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
+  font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   line-height: 1.5;
   margin: 4vw;
   color: var(--color-text);
@@ -70,7 +76,7 @@ p, h1, h2, h3, h4, time, blockquote, pre, code, ul, aside, .footnotes, .centered
 }
 
 pre, code {
-  font-face: var(--font-mono);
+  font-family: var(--font-mono);
 }
 
 blockquote {
