@@ -1,3 +1,9 @@
+@font-face { font-family: 'body';                     src: url('/assets/fonts/IBMPlexSans-Text.woff') format('woff'); }
+@font-face { font-family: 'body'; font-style: italic; src: url('/assets/fonts/IBMPlexSans-TextItalic.woff') format('woff'); }
+@font-face { font-family: 'body'; font-weight: 800;   src: url('/assets/fonts/IBMPlexSans-Bold.woff') format('woff'); }
+
+@font-face { font-family: 'mono';                     src: url('/assets/fonts/IBMPlexMono-Text-Latin1.woff') format('woff'); }
+
 :root {
   --color-bg: #ffffff;
   --color-text: #444444;
@@ -10,8 +16,8 @@
   --color-emphasis-text: #888;
   --color-neutral: rgba(128, 128, 128, 0.3);
   --max-width: 36rem;
-  --font-sans: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-mono: 'Source Code Pro', monospace;
+  --font-sans: 'body', sans-serif;
+  --font-mono: 'mono', monospace;
   --max-image-width: 50rem;
   --font-small: 0.85rem;
 }
@@ -32,12 +38,11 @@
 }
 
 html {
-  font-size: 16px;
+  font: 18px/28px var(--font-sans);
   line-height: 1.5;
   margin: 4vw;
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: var(--font-sans);
 }
 
 body {
