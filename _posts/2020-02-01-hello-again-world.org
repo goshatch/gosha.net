@@ -5,7 +5,7 @@
 #+SUMMARY: A reboot for the Open Web
 
 This is the gazillionth rebuild of gueorgui dot net. Welcome! Feel free to skip
-to the bottom of the post to see what you can expect all of this.
+to the bottom of the post to see what you can expect from all of this.
 
 I've had my own website in some shape or form since pretty much 1995. My
 earliest efforts were hosted on good old Geocities and built around fandom: [[https://en.wikipedia.org/wiki/Lois_%26_Clark%3A_The_New_Adventures_of_Superman][Lois
