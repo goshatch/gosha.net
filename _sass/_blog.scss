@@ -21,6 +21,26 @@
   }
 }
 
+.blog article {
+  max-width: var(--max-width);
+  hr {
+    width: 3rem;
+    margin: 2rem auto;
+    opacity: 0.5;
+  }
+  p {
+    hyphens: auto;
+    &:first-child::first-letter {
+      font-size: 4rem;
+      float: left;
+      margin-top: -0.2rem;
+      margin-right: 0.1rem;
+      font-weight: bold;
+      color: var(--color-link);
+    }
+  }
+}
+
 .post-card {
   display: grid;
   grid-gap: 1rem;
