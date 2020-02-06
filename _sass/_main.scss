@@ -170,6 +170,11 @@ aside {
   }
 }
 
+.small {
+  font-size: var(--font-small);
+  color: var(--color-text-subdued);
+}
+
 .meta {
   font-size: var(--font-small);
   margin-top: -1rem;
