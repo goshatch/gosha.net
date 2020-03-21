@@ -6,7 +6,7 @@ active: blog
   <header>
     <h1>{{ page.title }}</h1>
     <div class="meta">
-      <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%e %B %Y" }}</time>
+      <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%e %B %Y" }}</time>, <span class="location">{{ page.location }}</span>
     </div>
   </header>
   {% if page.rss_only %}
@@ -18,9 +18,10 @@ active: blog
   <section>
     {{ content }}
   </section>
+
   <aside class="comments">
-    Please get in touch by <a href="mailto:hello@gueorgui.net?subject=Comment on '{{ page.title }}'">email</a>, on
+    Have a comment? Please get in touch by <a href="mailto:hello@gueorgui.net?subject=Re: {{ page.title }}">email</a>, on
     <a href="https://merveilles.town/@gueorgui">Mastodon</a>, or on
-    <a href="https://twitter.com/gueorgui">Twitter</a> if you'd like to comment. I reply to all!
+    <a href="https://twitter.com/gueorgui">Twitter</a>. I do my best to reply to all.
   </aside>
 </article>

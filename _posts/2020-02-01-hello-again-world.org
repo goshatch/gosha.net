@@ -1,6 +1,7 @@
 #+TITLE: Hello again, World!
 #+DATE: 2020-02-01 12:22:08 +0000
 #+LAYOUT: post
+#+LOCATION: London
 #+CATEGORIES: meta
 #+SUMMARY: A reboot for the Open Web
 

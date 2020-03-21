@@ -215,6 +215,14 @@ section.gallery {
   .col.gallery figcaption {
     text-align: left;
   }
+  .col.text hr {
+    width: 3rem;
+    margin: 2rem auto;
+    opacity: 0.5;
+  }
+  .col.text p:first-child, .col.text h2:first-child {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 768px) {

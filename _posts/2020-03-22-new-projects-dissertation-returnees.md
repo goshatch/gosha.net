@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Two new projects: dissertation and Returnees 海归"
-date: 2020-03-21 16:00:00 +0000
+date: 2020-03-22 10:00:00 +0000
+location: London
 categories: ['projects']
 summary: Including a collaboration with writer Hengtee Lim.
+image: /assets/images/projects/returnees/returnees_06.jpg
 ---
 
 Hello from locked down London, in the spring of COVID-19, 2020. I hope that

@@ -26,6 +26,12 @@ body > footer {
     background-position: 0 -2px;
     background-image: url('https://webring.xxiivv.com/icon.black.svg');
   }
+
+  .motto {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    opacity: 0.3
+  }
 }
 
 @media (prefers-color-scheme: dark) {
