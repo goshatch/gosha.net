@@ -205,3 +205,20 @@ section.gallery {
     grid-template-columns: 1fr;
   }
 }
+
+.double-column {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  .col.gallery figcaption {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .double-column {
+    grid-template-columns: 1fr;
+  }
+}
