@@ -1,6 +1,5 @@
 _site
-dist
-node_modules
+build
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
