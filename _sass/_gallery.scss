@@ -217,7 +217,7 @@ section.gallery {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .double-column {
     grid-template-columns: 1fr;
   }
