@@ -229,20 +229,21 @@ section, article {
     max-width: var(--max-width);
     margin: 0 auto;
   }
-  .footnotes {
-    font-size: var(--font-small);
+}
 
-    &::before {
-      display: block;
-      background-color: var(--color-neutral);
-      height: 1px;
-      width: 6rem;
-      content: '';
-    }
-    .footnote {
-      a.back {
-        text-decoration: none;
-      }
+.footnotes {
+  font-size: var(--font-small);
+
+  &::before {
+    display: block;
+    background-color: var(--color-neutral);
+    height: 1px;
+    width: 6rem;
+    content: '';
+  }
+  .footnote {
+    a.back {
+      text-decoration: none;
     }
   }
 }

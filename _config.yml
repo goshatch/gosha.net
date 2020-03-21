@@ -40,11 +40,15 @@ plugins:
   - jekyll-feed
   - jekyll-org
   - jekyll-autoprefixer
+  - jekyll-figure
 
 exclude:
   - updategitinfo.sh
 
 destination: build
+
+jekyll-figure:
+  paragraphs: false
 
 defaults:
   - scope:

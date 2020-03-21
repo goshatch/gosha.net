@@ -7,6 +7,7 @@ group :jekyll_plugins do
   gem 'jekyll-autoprefixer'
   gem 'jekyll-feed', '~> 0.12'
   gem 'jekyll-org', '>= 1.1.0'
+  gem 'jekyll-figure'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
