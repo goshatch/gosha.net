@@ -44,6 +44,7 @@ plugins:
 
 exclude:
   - updategitinfo.sh
+  - README.org
 
 destination: build
 
