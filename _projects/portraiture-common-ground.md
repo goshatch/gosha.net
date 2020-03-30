@@ -305,10 +305,10 @@ policies.
 In one striking photograph taken during the Great Leap Forward famine — which
 claimed upwards of thirty million lives — a group of children are depicted
 apparently standing on top of a field of wheat, apparently so densely grown that
-it could support their weight. (Fig. 7) The children were in fact standing on
+it could support their weight[^21]. (Fig. 7[^22]) The children were in fact standing on
 top of a bench concealed by the especially arranged stalks.
 
-{% figure caption: "Fig. 7: People standing on top of unharvested grain in the “Sputnik” fields[^21] of autumn 1959.[^22]" %}
+{% figure caption: "Fig. 7: People standing on top of unharvested grain in the “Sputnik” fields of autumn 1959." %}
 ![Fig. 7: People standing on top of unharvested grain in the “Sputnik” fields of
 autumn 1959.](/assets/images/projects/portraiture-common-ground/07-sputnik.jpg)
 {% endfigure %}
@@ -568,9 +568,8 @@ certain visual style common to Luo Yang and Yurie Nagashima, as well as other
 artists working with the same sensibilities and on similar subject matter.
 However, what has emerged from researching these photographers and examining
 their work was beyond mere visuals. The connections between the portraiture work
-of Luo and Nagashima are go beyond the aesthetic similarities and get
-interesting in the approach to their subject matter exhibited by the two
-photographers.
+of Luo and Nagashima go beyond the aesthetic similarities and get interesting in
+the approach to their subject matter exhibited by the two photographers.
 
 That is not to say that the technical aspect is not important for this
 _portraiture of the common ground_. Both Nagashima and Luo are primarily users
