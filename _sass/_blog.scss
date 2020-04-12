@@ -22,6 +22,15 @@
 }
 
 .blog article {
+  figure {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: block;
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
   .video {
     max-width: var(--max-width);
     width: 100%;
@@ -46,7 +55,7 @@
     margin: 2rem auto;
     opacity: 0.5;
   }
-  p {
+  & > p {
     hyphens: auto;
     &:first-child::first-letter {
       font-size: 4rem;
