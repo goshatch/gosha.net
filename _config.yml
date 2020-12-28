@@ -38,13 +38,12 @@ meta:
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-org
   - jekyll-autoprefixer
   - jekyll-figure
 
 exclude:
   - updategitinfo.sh
-  - README.org
+  - README.md
 
 destination: build
 
