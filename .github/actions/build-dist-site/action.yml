@@ -1,6 +1,0 @@
-name: 'Deploy a new version'
-description: 'Setup the Ruby environment and build a new version of the website'
-author: 'Gueorgui Tcherednitchenko'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
