@@ -6,7 +6,7 @@ Please feel free to look around and get inspiration. If something is unclear, pl
 
 ## Running a local copy
 
-In order to run the website locally, clone the repository and use the `source` branch.
+In order to run the website locally, clone the repository and run these commands:
 
 ```bash
 $ bundle install
@@ -15,9 +15,7 @@ $ bundle exec jekyll serve -l
 
 ## Deployment
 
-The `source` branch contains the source code, and the `master` branch contains the result of the build, which is then available via github pages.
-
-The configuration files for building and deploying the site to Github Pages are located [in the `.github` directory](https://github.com/gueorgui/gueorgui.github.io/tree/source/.github) of the `source` branch.
+It's trivial to deploy a copy of this site to Vercel (which is what I use) or Netlify. Use the Jekyll build pack and things should run smoothly.
 
 ## Licensing and copyright
 
