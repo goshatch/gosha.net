@@ -69,7 +69,7 @@ main {
   }
 }
 
-p, h1, h2, h3, h4, time, blockquote, pre, code, ul, aside, .footnotes, .centered {
+p, h1, h2, h3, h4, time, blockquote, pre, code, ul, ol, aside, .footnotes, .centered {
   width: 100%;
   max-width: var(--max-width);
   margin-left: auto;
