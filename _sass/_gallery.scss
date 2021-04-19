@@ -109,9 +109,6 @@ section.gallery {
   justify-content: space-between;
   margin: 2rem 0;
   .home-photo {
-    &:first-child {
-      margin-right: 4vw;
-    }
     img {
       max-width: 100%;
     }
