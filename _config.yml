@@ -29,7 +29,6 @@ permalink: pretty
 timezone: Europe/London
 meta:
   theme_color: "#000"
-  twitter: "@gueorgui"
   twitter_card_type: "summary"
   github_username: "gueorgui"
   mastodon: "https://merveilles.town/@gueorgui"
