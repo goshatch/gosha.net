@@ -251,3 +251,22 @@ section, article {
     }
   }
 }
+
+a.hero {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10rem;
+  line-height: 1;
+  font-weight: bold;
+  padding: 4rem 0;
+  background: -webkit-linear-gradient(#005BBB , #FFD500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 480px) {
+  a.hero {
+    font-size: 5rem;
+  }
+}

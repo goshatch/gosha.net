@@ -20,11 +20,11 @@
 
 title: Gueorgui Tcherednitchenko
 author: Gueorgui Tcherednitchenko
-email: gt@gueorgui.net
+email: mail@gosha.net
 description: >- # this means to ignore newlines until "baseurl:"
   Photography, design, writing, and software projects by Gueorgui Tcherednitchenko
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://gueorgui.net # the base hostname & protocol for your site, e.g. http://example.com
+url: https://gosha.net # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
 timezone: Europe/London
 meta:
