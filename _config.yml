@@ -30,6 +30,7 @@ timezone: Europe/London
 meta:
   theme_color: "#000"
   twitter_card_type: "summary"
+  twitter: "goshaphoto"
   github_username: "gueorgui"
   mastodon: "https://merveilles.town/@gueorgui"
   default_social_image: "/assets/images/projects/where-the-story-begins/featured.jpg"
