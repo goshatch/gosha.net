@@ -7,7 +7,7 @@ categories: ['meta']
 summary: A reboot for the Open Web
 ---
 
-This is the gazillionth rebuild of gueorgui dot net. Welcome! Feel free to skip
+This is the gazillionth rebuild of gosha dot net. Welcome! Feel free to skip
 to the bottom of the post to see what you can expect from all of this.
 
 I've had my own website in some shape or form since pretty much 1995. My
@@ -62,7 +62,7 @@ and blogs blogs blogs.
 
 -----
 
-With this version of gueorgui dot net, I'm trying to accomplish just three things:
+With this version of gosha dot net, I'm trying to accomplish just three things:
 
 1. Keep an ongoing documentation of the projects I'm working on, be they
 photography, software, or anything else.
@@ -79,4 +79,4 @@ your inbox.
 
 This one is for the long haul; I'm happy to have you here.
 
-— [Gueorgui](/about)
+— [Gosha](/about)
