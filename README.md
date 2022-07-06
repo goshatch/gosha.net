@@ -1,8 +1,8 @@
 # Source code for gosha.net
 
-This repository contains the source code and assets for my personal homepage, [https://gueorgui.net](https://gueorgui.net).
+This repository contains the source code and assets for my personal homepage, [https://gosha.net](https://gosha.net).
 
-Please feel free to look around and get inspiration. If something is unclear, please [open an issue](https://github.com/gueorgui/gueorgui.net/issues) or [email me](mailto:mail@gosha.net?subject=Question about your website).
+Please feel free to look around and get inspiration. If something is unclear, please [open an issue](https://github.com/goshatch/gosha.net/issues) or [email me](mailto:mail@gosha.net?subject=Question about your website).
 
 ## Running a local copy
 
