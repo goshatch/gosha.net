@@ -1,11 +1,6 @@
 <header>
   <nav>
     <ul>
-      <li class="logo">
-        <a href="/">
-          <img src="/assets/images/logo.png" alt="Website logo" />
-        </a>
-      </li>
       <li>
         <a class="nav-item{% if active == 'home' %} active{% endif %}" href="/">
           <i class="twa twa-pirate-flag"></i> Home
@@ -35,6 +30,12 @@
         <a class="nav-item{% if active == 'now' %} active{% endif %}" href="/now">
           <i class="twa twa-high-voltage"></i> Now
         </a>
+      </li>
+      <li class="dark-mode-toggle">
+        <button onClick="toggleDarkMode()">
+          <i class="twa twa-sun"></i>
+          <i class="twa twa-moon"></i>
+        </button>
       </li>
     </ul>
   </nav>
