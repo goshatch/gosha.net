@@ -33,11 +33,12 @@ body .content > header > nav > ul > li a {
   }
 }
 
-.dark-mode-toggle {
+.theme-toggle {
   button {
     background: var(--color-emphasis);
     border-radius: 2rem;
     padding-bottom: 0.5rem;
+    cursor: pointer;
   }
   .twa-moon {
     display: none;
@@ -47,7 +48,7 @@ body .content > header > nav > ul > li a {
   }
 }
 
-.light .dark-mode-toggle {
+.light .theme-toggle {
   .twa-moon {
     display: none;
   }
@@ -56,7 +57,7 @@ body .content > header > nav > ul > li a {
   }
 }
 
-.dark .dark-mode-toggle {
+.dark .theme-toggle {
   .twa-sun {
     display: none;
   }
@@ -66,7 +67,7 @@ body .content > header > nav > ul > li a {
 }
 
 @media (prefers-color-scheme: dark) {
-  .dark-mode-toggle {
+  .theme-toggle {
     .twa-sun {
       display: none;
     }
@@ -87,7 +88,7 @@ body .content > header > nav > ul > li a {
     margin-right: 0;
     width: 60%;
   }
-  .dark-mode-toggle {
+  .theme-toggle {
     position: absolute;
     top: 0.1rem;
     right: 0px;
