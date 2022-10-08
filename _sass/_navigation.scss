@@ -1,13 +1,13 @@
-body > header {
+body .content > header {
   margin: 0 auto 2vw;
 }
 
-body > header h1 a {
+body .content > header h1 a {
   text-decoration: none;
   color: var(--color-highlight);
 }
 
-body > header > nav > ul {
+body .content > header > nav > ul {
   max-width: inherit;
   list-style-type: none;
   padding-left: 0;
@@ -15,12 +15,12 @@ body > header > nav > ul {
   font-family: var(--font-mono);
 }
 
-body > header > nav > ul > li {
+body .content > header > nav > ul > li {
   padding-left: 0;
   display: inline-block;
 }
 
-body > header > nav > ul > li a {
+body .content > header > nav > ul > li a {
   text-decoration: none;
   &.nav-item {
     padding: 0.5rem 1.2rem 0.5rem 1rem;
@@ -30,19 +30,6 @@ body > header > nav > ul > li a {
   &.active {
     background-color: var(--color-emphasis);
     color: var(--color-highlight);
-  }
-}
-
-@media (max-width: 480px) {
-  body > header > nav > ul {
-    text-align: left;
-    position: relative;
-    margin-top: 0;
-  }
-  body > header > nav > ul > li {
-    display: block;
-    margin-right: 0;
-    width: 60%;
   }
 }
 
@@ -59,7 +46,6 @@ body > header > nav > ul > li a {
     display: inline-block;
   }
 }
-
 
 .light .dark-mode-toggle {
   .twa-moon {
@@ -87,5 +73,24 @@ body > header > nav > ul > li a {
     .twa-moon {
       display: inline-block;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  body .content > header > nav > ul {
+    text-align: left;
+    position: relative;
+    margin-top: 0;
+  }
+  body .content > header > nav > ul > li {
+    display: block;
+    margin-right: 0;
+    width: 60%;
+  }
+  .dark-mode-toggle {
+    position: absolute;
+    top: 0.1rem;
+    right: 0px;
+    width: 2.5rem !important;
   }
 }

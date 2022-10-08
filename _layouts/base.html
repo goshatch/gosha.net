@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="/assets/stylesheets/app.css">
   </head>
   <body>
-    {% include navigation.html %}
-    <main class="{{ active }} {{ page.slug }}">
-      {{ content | safe }}
-    </main>
-    {% include footer.html %}
+    {% include ukraine.html %}
+    <div class="content">
+      {% include navigation.html %}
+      <main class="{{ active }} {{ page.slug }}">
+        {{ content | safe }}
+      </main>
+      {% include footer.html %}
+    </div>
   </body>
   {% include javascript.html %}
 </html>

@@ -1,0 +1,26 @@
+header.ukraine-banner {
+  background-color: var(--color-emphasis);
+  padding: 0.5rem 0;
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .link {
+    display: inline-block;
+    margin-left: 1.6rem;
+    position: relative;
+    i.twa {
+      position: absolute;
+      left: -1.6rem;
+      top: 0.2rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header.ukraine-banner {
+    padding: 0.5rem 2rem;
+  }
+}

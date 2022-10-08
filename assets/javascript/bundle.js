@@ -4,7 +4,7 @@
 //
 // Source: https://stackoverflow.com/a/68824350/12288625
 
-function toggleDarkMode() {
+const toggleDarkMode = () => {
   if (document.documentElement.classList.contains("light")) {
     document.documentElement.classList.remove("light")
     document.documentElement.classList.add("dark")
@@ -19,3 +19,14 @@ function toggleDarkMode() {
     }
   }
 }
+
+const daysOfWar = () => {
+  const warStart = new Date('2022-02-24')
+  const currentDate = new Date()
+
+  return Math.round((currentDate-warStart)/(1000*60*60*24))
+}
+
+(function() {
+  document.getElementById('war-days').innerHTML = `${daysOfWar()} days of war! `
+})()

@@ -58,14 +58,17 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   line-height: 1.5;
-  margin: 4vw;
   color: var(--color-text);
   background-color: var(--color-bg);
 }
 
 body {
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 0px;
+  .content {
+    margin: 4vw;
+    max-width: 1200px;
+    // margin: 0 auto;
+  }
 }
 
 main {
