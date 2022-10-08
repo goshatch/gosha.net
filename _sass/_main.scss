@@ -64,10 +64,12 @@ html {
 
 body {
   margin: 0px;
-  .content {
-    margin: 4vw;
-    max-width: 1200px;
-    // margin: 0 auto;
+  .content-container {
+    padding: 4vw;
+    .content {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
   }
 }
 

@@ -13,12 +13,14 @@
   </head>
   <body>
     {% include ukraine.html %}
-    <div class="content">
-      {% include navigation.html %}
-      <main class="{{ active }} {{ page.slug }}">
-        {{ content | safe }}
-      </main>
-      {% include footer.html %}
+    <div class="content-container">
+      <div class="content">
+        {% include navigation.html %}
+        <main class="{{ active }} {{ page.slug }}">
+          {{ content | safe }}
+        </main>
+        {% include footer.html %}
+      </div>
     </div>
   </body>
   {% include javascript.html %}
