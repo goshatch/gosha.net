@@ -11,6 +11,7 @@
   --color-link: #fff;
   --color-link-subdued: #bbb;
   --color-emphasis: #000000;
+  --color-emphasis-reversed: #fff8e0;
 }
 
 @mixin light-colors {
@@ -20,6 +21,7 @@
   --color-link: #000000;
   --color-link-subdued: #222;
   --color-emphasis: #fff8e0;
+  --color-emphasis-reversed: #000000;
 }
 
 :root, :root.light {

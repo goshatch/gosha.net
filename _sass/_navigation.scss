@@ -46,9 +46,12 @@ body .content > header > nav > ul > li a {
   .twa-sun {
     display: inline-block;
   }
+  &:hover button {
+    background: var(--color-emphasis-reversed);
+  }
 }
 
-.light .theme-toggle {
+.light .theme-toggle, .dark .theme-toggle:hover {
   .twa-moon {
     display: none;
   }
@@ -57,7 +60,7 @@ body .content > header > nav > ul > li a {
   }
 }
 
-.dark .theme-toggle {
+.dark .theme-toggle, .light .theme-toggle:hover {
   .twa-sun {
     display: none;
   }
