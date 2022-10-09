@@ -271,33 +271,6 @@ section, article {
   }
 }
 
-.hero {
-  background-image: url(/assets/images/home_war.jpg);
-  background-size: cover;
-  background-position: center;
-  margin: 3rem 0;
-  a {
-    color: white;
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 10rem 0;
-    text-align: center;
-    text-decoration: none;
-    font-size: 10rem;
-    line-height: 1;
-    font-weight: bold;
-    &:hover {
-      .ua-flag-top {
-        color: #005BBB;
-      }
-      .ua-flag-bottom {
-        color: #FFD500;
-      }
-    }
-  }
-}
-
 @media (max-width: 480px) {
   .hero a {
     font-size: 5rem;
