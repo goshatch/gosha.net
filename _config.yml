@@ -35,11 +35,16 @@ meta:
   github_username: "goshatch"
   default_social_image: "/assets/images/projects/where-the-story-begins/featured.jpg"
 
+mastodon:
+  username: gosha
+  instance: merveilles.town
+
 # Build settings
 plugins:
   - jekyll-feed
   - jekyll-autoprefixer
   - jekyll-figure
+  - jekyll/mastodon_webfinger
 
 exclude:
   - updategitinfo.sh
