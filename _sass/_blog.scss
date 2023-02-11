@@ -21,6 +21,16 @@
   }
 }
 
+/* NOTE: The title on the project page can be quite long, so on a narrow screen
+ * it's better for the RSS link to have its own line. */
+@media (max-width: 700px) {
+  .projects > header .rss-link {
+    position: relative;
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
 .blog article {
   figure {
     max-width: var(--max-width);
