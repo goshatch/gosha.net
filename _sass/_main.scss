@@ -1,9 +1,3 @@
-@font-face { font-family: 'body';                     src: url('/assets/fonts/IBMPlexSans-Text.woff') format('woff'); }
-@font-face { font-family: 'body'; font-style: italic; src: url('/assets/fonts/IBMPlexSans-TextItalic.woff') format('woff'); }
-@font-face { font-family: 'body'; font-weight: 800;   src: url('/assets/fonts/IBMPlexSans-Bold.woff') format('woff'); }
-
-@font-face { font-family: 'mono';                     src: url('/assets/fonts/IBMPlexMono-Text-Latin1.woff') format('woff'); }
-
 @mixin dark-colors {
   --color-bg: #161616;
   --color-text: #aaa;

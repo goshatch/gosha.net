@@ -15,8 +15,10 @@ $ bundle exec jekyll serve -l
 
 ## Deployment
 
-It's trivial to deploy a copy of this site to Vercel (which is what I use) or Netlify. Use the Jekyll build pack and things should run smoothly.
+It's trivial to deploy a copy of this site to Vercel or Netlify. Use the Jekyll build pack and things should run smoothly.
 
 ## Licensing and copyright
 
 Please note that all the content in this repository is copyrighted, most of the time by me, and when specified, by others. You are free to re-use source code, but please do not copy or re-use images or other assets without permission.
+
+In particular, fonts within the `/assets/fonts` directory are copyrighted by their respective designers. `Berkeley Mono` is used under a personal license and may not be reused.

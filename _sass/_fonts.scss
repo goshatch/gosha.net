@@ -1,0 +1,66 @@
+/*
+ * Body typeface: IBM Plex Sans
+ * https://github.com/IBM/plex
+ */
+
+@font-face {
+  font-family: 'body';
+  src: url('/assets/fonts/IBMPlexSans-Text.woff') format('woff');
+}
+@font-face {
+  font-family: 'body';
+  font-style: italic;
+  src: url('/assets/fonts/IBMPlexSans-TextItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'body';
+  font-weight: 800;
+  src: url('/assets/fonts/IBMPlexSans-Bold.woff') format('woff');
+}
+
+/*
+ * Monospace typeface: Berkeley Mono
+ * https://berkeleygraphics.com/typefaces/berkeley-mono/
+ *
+ * NOTE: The woff/woff2 files included under this repository are *NOT* licensed for reuse.
+ */
+@font-face {
+  font-family: 'mono';
+  src: url('/assets/fonts/BerkeleyMono-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'mono';
+  font-style: italic;
+  src: url('/assets/fonts/BerkeleyMono-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'mono';
+  font-weight: 800;
+  src: url('/assets/fonts/BerkeleyMono-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'mono';
+  font-weight: 800;
+  font-style: italic;
+  src: url('/assets/fonts/BerkeleyMono-BoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'mono';
+  src: url('/assets/fonts/BerkeleyMono-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'mono';
+  font-style: italic;
+  src: url('/assets/fonts/BerkeleyMono-Italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'mono';
+  font-weight: 800;
+  src: url('/assets/fonts/BerkeleyMono-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'mono';
+  font-weight: 800;
+  font-style: italic;
+  src: url('/assets/fonts/BerkeleyMono-BoldItalic.woff2') format('woff2');
+}
