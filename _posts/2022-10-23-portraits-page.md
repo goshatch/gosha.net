@@ -5,7 +5,7 @@ date: 2022-10-22 00:13:00 +0000
 location: London
 categories: ['meta']
 summary: Photographing people is one of my favourite things
-image: /assets/images/portraits/portrait-01.jpg
+featured_image: /assets/images/portraits/portrait-01.jpg
 ---
 
 It’s been a long while since I wrote a blog post! I intend to start writing more regularly and more intentionally, but for now here’s a small announcement:
