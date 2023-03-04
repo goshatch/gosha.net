@@ -80,12 +80,12 @@ section.gallery {
 }
 
 .returnees section.gallery figure {
-    &:nth-child(even) {
-      text-align: center;
-    }
-    &:nth-child(odd) {
-      text-align: center;
-    }
+  &:nth-child(even) {
+    text-align: center;
+  }
+  &:nth-child(odd) {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -101,16 +101,26 @@ section.gallery {
   }
 }
 
-.home-photos {
+.full-width-photos {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   margin: 2rem 0;
-  .home-photo {
+  gap: 1rem;
+  .photo {
     img {
       max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .full-width-photos {
+    display: block;
+    .photo {
+      margin-bottom: 1rem;
     }
   }
 }
