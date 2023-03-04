@@ -1,5 +1,5 @@
-body > footer {
-  // color: var(--color-text-subdued);
+footer {
+  color: var(--color-text-subdued);
   margin: 8vw auto 4vw;
   font-size: var(--font-small);
 
@@ -16,7 +16,7 @@ body > footer {
   }
 
   a {
-    // color: var(--color-link-subdued);
+    color: var(--color-link-subdued);
   }
 
   .webring-link {
@@ -35,7 +35,17 @@ body > footer {
 }
 
 @media (prefers-color-scheme: dark) {
-  body > footer .webring-link {
+  footer .webring-link {
+    background-image: url('https://webring.xxiivv.com/icon.white.svg');
+  }
+
+  html.light footer .webring-link {
+    background-image: url('https://webring.xxiivv.com/icon.black.svg');
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html.dark footer .webring-link {
     background-image: url('https://webring.xxiivv.com/icon.white.svg');
   }
 }

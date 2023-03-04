@@ -1,5 +1,5 @@
 body .content > header {
-  margin: 0 auto 2vw;
+  margin: 0 auto 6vw;
 }
 
 body .content > header h1 a {
@@ -13,23 +13,23 @@ body .content > header > nav > ul {
   padding-left: 0;
   text-align: center;
   font-family: var(--font-mono);
-  text-transform: uppercase;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: var(--font-small);
 }
 
 body .content > header > nav > ul > li {
   padding-left: 0;
-  display: inline-block;
 }
 
 body .content > header > nav > ul > li a {
   text-decoration: none;
   &.nav-item {
-    padding: 0.5rem 1.2rem 0.5rem 1rem;
-    border-radius: 2rem;
     display: block;
   }
   &.active {
-    background-color: var(--color-emphasis);
     color: var(--color-highlight);
   }
 }
@@ -40,6 +40,7 @@ body .content > header > nav > ul > li a {
     border-radius: 2rem;
     padding-bottom: 0.5rem;
     cursor: pointer;
+    margin-top: -0.6rem;
   }
   .twa-moon {
     display: none;
@@ -81,11 +82,11 @@ body .content > header > nav > ul > li a {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   body .content > header > nav > ul {
     text-align: left;
+    flex-wrap: wrap;
     position: relative;
-    margin-top: 0;
   }
   body .content > header > nav > ul > li {
     display: block;
