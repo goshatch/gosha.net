@@ -82,23 +82,36 @@
 .post-card {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 5rem auto;
+  grid-template-columns: 6rem auto;
   max-width: var(--max-width);
+  margin-top: 1rem;
 
-  time {
-    margin: 1rem 0;
-    font-size: var(--font-small);
-    line-height: 1.8;
+  .featured-image {
+    width: 6rem;
+    height: 6rem;
+    transform: rotate(5deg);
+    text-align: center;
+    img {
+      height: 100%;
+    }
   }
   .contents {
+    time {
+      font-size: var(--font-small);
+      line-height: 1.8;
+    }
     header {
-      margin-top: 1rem;
       margin-bottom: 0.5rem;
     }
     p {
       margin-top: 0.5rem;
     }
   }
+  &:nth-child(2n) .featured-image { transform: rotate(-4deg) }
+  &:nth-child(3n) .featured-image { transform: rotate(2deg) }
+  &:nth-child(4n) .featured-image { transform: rotate(-5deg) }
+  &:nth-child(5n) .featured-image { transform: rotate(4deg) }
+  &:nth-child(6n) .featured-image { transform: rotate(-3deg) }
 }
 
 .meta .location {
