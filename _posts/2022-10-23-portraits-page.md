@@ -17,5 +17,5 @@ If you’re interested in having your portrait taken by me, please email me at [
 I’m looking forward to working with you!
 
 {% figure %}
-![Tingyi](/assets/images/portraits/portrait-01.jpg)
+![T.](/assets/images/portraits/portrait-01.jpg)
 {% endfigure %}
