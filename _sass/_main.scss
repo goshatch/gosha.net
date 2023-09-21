@@ -201,7 +201,6 @@ figure {
   figcaption {
     font-size: var(--font-small);
     color: var(--color-emphasis-text);
-    opacity: 0.5;
     margin: 1rem 0 2rem;
   }
 }
@@ -258,11 +257,6 @@ section, article {
     width: 6rem;
     content: '';
     margin-top: 8rem;
-  }
-  .footnote {
-    a.back {
-      text-decoration: none;
-    }
   }
 }
 

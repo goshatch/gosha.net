@@ -1,8 +1,8 @@
 <article class="post-card">
   <div class="featured-image">
     {% if post.featured_image %}
-      <a href="{{ post.url }}">
-        <img src="{{ post.featured_image }}" alt="">
+      <a href="{{ post.url }}" aria-label="{{ post.title }}">
+        <img src="{{ post.featured_image }}" alt="Image thumbnail for blog post '{{ post.title }}'">
       </a>
     {% endif %}
   </div>
