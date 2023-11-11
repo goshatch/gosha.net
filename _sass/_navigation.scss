@@ -28,6 +28,9 @@ body .content > header > nav > ul > li a {
   text-decoration: none;
   &.nav-item {
     display: block;
+    .nav-item-label {
+      white-space: nowrap;
+    }
   }
   &.active {
     color: var(--color-highlight);
