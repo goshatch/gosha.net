@@ -1,20 +1,13 @@
 ---
 layout: base
-title: What I'm working on now
-active: now
 ---
 <header>
   <h1>What I'm working on now</h1>
   <div class="meta">
-    <p>Updated on 2022/04/10</p>
+    <p>Updated on {{ page.updated_at }}</p>
   </div>
 </header>
 
 <aside>This is a <a href="https://nownownow.com/about" target="_blank">Now Page,</a> inspired by <a href="https://sivers.org/now" target="_blank">Derek Sivers</a>. If you have your own site, <a href="https://nownownow.com/about" target="_blank">you should make one</a>, too.</aside>
 
-<section>
-  <header>
-    <h2>War</h2>
-  </header>
-  <p>War is ongoing. Please consider supproting Ukraine via <a href="https://standforukraine.com/">Stand with Ukraine</a>. Thank you!</p>
-</section>
+{{ content | safe }}
