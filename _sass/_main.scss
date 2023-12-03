@@ -82,6 +82,10 @@ main {
   }
 }
 
+p, pre, code, ul, ol {
+  margin-top: 0px;
+}
+
 p, h1, h2, h3, h4, time, blockquote, pre, code, ul, ol, aside, .footnotes, .centered {
   width: 100%;
   max-width: var(--max-width);
@@ -257,6 +261,7 @@ section, article {
     width: 6rem;
     content: '';
     margin-top: 8rem;
+    margin-bottom: 1rem;
   }
 }
 
