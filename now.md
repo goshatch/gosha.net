@@ -1,6 +1,6 @@
 ---
 layout: now
-title: What I'm working on now
+title: What I'm doing now
 active: now
 updated_at: 2023/12/03
 ---
