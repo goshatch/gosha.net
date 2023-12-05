@@ -9,12 +9,13 @@ title: Colophon
 
 <section>
   <p><code>gosha.net</code> is designed, written, and produced by <a href="/about" rel="author">Gosha Tcherednitchenko</a>, with illustrations by T.L.</p>
-  <p>It is typeset in <a href="https://github.com/IBM/plex">IBM Plex Sans</a> and <a href="https://berkeleygraphics.com/typefaces/berkeley-mono/">Berkeley Mono</a>, and hosted on <a href="https://render.com/">Render</a>.</p>
+  <p>It is typeset in <a href="https://github.com/IBM/plex">IBM Plex Sans</a> and <a href="https://berkeleygraphics.com/typefaces/berkeley-mono/">Berkeley Mono</a>, and hosted on <a href="https://srht.site/">Sourcehut Pages</a>.</p>
   <p>Essential tools used in production include:</p>
   <ul>
-    <li>HTML generation: <a href="https://www.jekyllrb.com/">Jekyll 4.0</a>, with <a href="https://github.com/jekyll/jekyll-feed">jekyll-feed</a> and <a href="https://github.com/vwochnik/jekyll-autoprefixer">jekyll-autoprefixer</a></li>
+    <li>HTML generation: <a href="https://www.jekyllrb.com/">Jekyll 4.3</a>, with <a href="https://github.com/jekyll/jekyll-feed">jekyll-feed</a> and <a href="https://github.com/vwochnik/jekyll-autoprefixer">jekyll-autoprefixer</a></li>
     <li>Code editing, writing, task management, general purpose operating system: <a href="https://www.gnu.org/software/emacs/">Emacs</a></li>
     <li>Version control: <a href="https://git-scm.com/">Git</a> via <a href="https://magit.vc">Magit</a></li>
+    <li>Builds and automatic deployment: <a href="https://builds.sr.ht">builds.sr.ht</a></li>
   </ul>
   <p>The site uses icons from <a href="https://github.com/twitter/twemoji">Twemoji</a> by Twitter, via <a href="https://github.com/SebastianAigner/twemoji-amazing">twemoji-amazing</a>, and an RSS feed icon adapted from <a href="http://www.feedicons.com/">FeedIcons</a>.</p>
 </section>
@@ -33,7 +34,7 @@ title: Colophon
   <h3>Build information</h3>
   <p>
     Last updated on {{ site.data.git.date | readableDate }}<br/>
-    <code><a href="https://github.com/goshatch/gosha.net/commit/{{ site.data.git.commitHash }}">{{ site.data.git.commitHash }}</a></code>
+    <code><a href="https://git.sr.ht/~gosha/gosha.net/commit/{{ site.data.git.commitHash }}">{{ site.data.git.commitHash }}</a></code>
     &rarr; {{ site.data.git.subject }}
   </p>
   <p>
