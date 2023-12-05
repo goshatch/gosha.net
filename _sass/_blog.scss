@@ -81,7 +81,7 @@
 .post-card {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 6rem auto;
+  grid-template-columns: auto 6rem;
   max-width: var(--max-width);
   margin-top: 1rem;
 

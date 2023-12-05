@@ -1,4 +1,12 @@
 <article class="post-card">
+  <div class="contents">
+    <header>
+      <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+      &mdash;
+      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%Y/%m/%d" }}</time>
+    </header>
+    <p>{{ post.summary }}</p>
+  </div>
   {% if post.featured_image %}
     <div class="featured-image">
       <a href="{{ post.url }}" aria-label="{{ post.title }}">
@@ -8,12 +16,4 @@
   {% else %}
     <div></div>
   {% endif %}
-  <div class="contents">
-    <header>
-      <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
-      &mdash;
-      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%Y/%m/%d" }}</time>
-    </header>
-    <p>{{ post.summary }}</p>
-  </div>
 </article>
