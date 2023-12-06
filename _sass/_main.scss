@@ -232,7 +232,8 @@ aside {
 }
 
 figure {
-  margin: 0px;
+  max-width: var(--max-width);
+  margin: 1rem auto;
   img {
     max-width: 100%;
   }

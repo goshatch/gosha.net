@@ -217,6 +217,11 @@ section.gallery {
   .col.gallery figcaption {
     text-align: left;
   }
+  .col.sticky {
+    position: sticky;
+    top: 1rem;
+    align-self: flex-start;
+  }
   .col.text hr {
     width: 3rem;
     margin: 2rem auto;
@@ -230,6 +235,11 @@ section.gallery {
 @media (max-width: 768px) {
   .double-column {
     grid-template-columns: 1fr;
+    .col.sticky {
+      position: unset;
+      top:auto;
+      align-self:normal;
+    }
   }
 }
 
@@ -255,7 +265,7 @@ section.gallery {
   .projects-grid, .gallery-grid {
     grid-template-columns: 1fr 1fr;
   }
-}
+ }
 @media (max-width: 480px) {
   .projects-grid, .gallery-grid {
     grid-template-columns: 1fr;
