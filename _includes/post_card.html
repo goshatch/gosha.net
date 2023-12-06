@@ -1,4 +1,4 @@
-<article class="post-card">
+<article class="post-card{% if post.featured_image %} with-image{% endif %}">
   <div class="contents">
     <header>
       <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>

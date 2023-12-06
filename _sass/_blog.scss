@@ -81,9 +81,13 @@
 .post-card {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: auto 6rem;
+  grid-template-columns: auto;
   max-width: var(--max-width);
   margin-top: 1rem;
+
+  &.with-image {
+    grid-template-columns: auto 6rem;
+  }
 
   .featured-image {
     width: 6rem;
