@@ -2,7 +2,7 @@
 
 This repository contains the source code and assets for my personal homepage, [https://gosha.net](https://gosha.net).
 
-Please feel free to look around and get inspiration. If something is unclear, please [open a ticket](https://todo.sr.ht/~gosha/gosha.net) in the issue tracker or [email me](mailto:mail@gosha.net?subject=Question%20about%20your%20website).
+Please feel free to look around and get inspiration. If something is unclear, please [create an issue](https://github.com/goshatch/gosha.net/issues) in the issue tracker or [email me](mailto:mail@gosha.net?subject=Question%20about%20your%20website).
 
 ## Running a local copy
 
