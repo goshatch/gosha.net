@@ -74,7 +74,7 @@ other. I want to be the kind of person who does this.
 If that sounds interesting, you can subscribe to the blog posts through the
 ancient technology known as [RSS](/feed.xml) if you want to be sure to not miss
 a thing, or if you'd prefer a couple-of-times-a-year sort of deal, [subscribe
-to my newsletter](/newsletter) instead, and get all the good parts straight in
+to my newsletter](/the-long-term) instead, and get all the good parts straight in
 your inbox.
 
 This one is for the long haul; I'm happy to have you here.
