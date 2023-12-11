@@ -265,6 +265,38 @@ section, article {
   }
 }
 
+.newsletter {
+  h1.logo-title {
+    background-image: url(/assets/images/newsletter/logo-black.svg);
+    display: block;
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    height: 10rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .newsletter h1.logo-title {
+    background-image: url(/assets/images/newsletter/logo-white.svg);
+  }
+
+  html.light .newsletter h1.logo-title {
+    background-image: url(/assets/images/newsletter/logo-black.svg);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .newsletter h1.logo-title {
+    background-image: url(/assets/images/newsletter/logo-black.svg);
+  }
+
+  html.dark .newsletter h1.logo-title {
+    background-image: url(/assets/images/newsletter/logo-white.svg);
+  }
+}
+
 @media (max-width: 480px) {
   .hero a {
     font-size: 5rem;
