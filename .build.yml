@@ -1,11 +1,14 @@
 image: alpine/edge
-oauth: pages.sr.ht/PAGES:RW
+secrets:
+- 821cf89d-a5e2-45e0-8431-1cf5de13c32d
+- cbe41c27-8296-4f78-969d-0f65de96c898
+- 75f1453a-7f9a-40ad-b0f8-d5d695bd7779
 packages:
 - ruby
 - ruby-dev
 - libffi-dev
 - nodejs
-- hut
+- rsync
 environment:
   site: gosha.net
 tasks:
@@ -16,8 +19,6 @@ tasks:
     sudo bundle install
     /bin/sh ./updategitinfo.sh
     sudo bundle exec jekyll build
-- package: |
+- deploy: |
     cd $site/build
-    tar -cvz . > ../../site.tar.gz
-- upload: |
-    hut pages publish -d $site site.tar.gz
+    rsync -Pvrthl --delete --info=progress2 . bubundel:/var/www/gosha.net
