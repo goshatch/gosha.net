@@ -1,0 +1,23 @@
+image: alpine/edge
+oauth: pages.sr.ht/PAGES:RW
+packages:
+- ruby
+- ruby-dev
+- libffi-dev
+- nodejs
+- hut
+environment:
+  site: gosha.net
+tasks:
+- install-bundler: |
+    sudo gem install bundler
+- build: |
+    cd $site
+    sudo bundle install
+    /bin/sh ./updategitinfo.sh
+    sudo bundle exec jekyll build
+- package: |
+    cd $site/build
+    tar -cvz . > ../../site.tar.gz
+- upload: |
+    hut pages publish -d $site site.tar.gz
