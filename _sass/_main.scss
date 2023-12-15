@@ -277,6 +277,19 @@ section, article {
   }
 }
 
+.openbsd {
+  text-decoration-color: #CF4229;
+  font-family: serif;
+  font-weight: bold;
+  .open {
+    color: #F2CA30;
+    font-style: italic;
+  }
+  .bsd {
+    color: #CF4229;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .newsletter h1.logo-title {
     background-image: url(/assets/images/newsletter/logo-white.svg);
