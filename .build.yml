@@ -1,4 +1,4 @@
-image: alpine/edge
+image: alpine/3.19
 secrets:
 - 821cf89d-a5e2-45e0-8431-1cf5de13c32d
 - 69657a19-c936-4d94-89e4-131206a5893c
