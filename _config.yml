@@ -33,7 +33,7 @@ meta:
   twitter: "goshatch"
   mastodon: "@gosha@merveilles.town"
   github_username: "goshatch"
-  default_social_image: "/assets/images/projects/where-the-story-begins/featured.jpg"
+  default_social_image: "/assets/images/default_social.png"
 
 mastodon:
   username: gosha
