@@ -291,6 +291,36 @@ section, article {
   }
 }
 
+ul.task-list {
+  padding-left: 0px;
+
+  li.task-list-item {
+    list-style: none;
+    padding-left: 0px;
+
+    input.task-list-item-checkbox {
+      margin-right: 0.5rem;
+
+      &:checked {
+        margin-right: 2.5rem;
+
+        &::after {
+          content: "Done";
+          color: white;
+          font-size: x-small;
+          background-color: green;
+          padding: 0.1em 0.3em;
+          margin-left: 1.2rem;
+          font-family: var(--font-mono);
+          text-transform: uppercase;
+          border-radius: 10%;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .newsletter h1.logo-title {
     background-image: url(/assets/images/newsletter/logo-white.svg);
