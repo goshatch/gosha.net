@@ -1,25 +1,34 @@
-<hr/>
 <footer>
   <p>
     <a href='#' class="back-to-top">Back to top</a>
   </p>
   <p>
-    &copy; 2007&ndash;2024 Gosha Tcherednitchenko<br>
-    <a href="/colophon">Colophon</a> ·
-    <a href="/accessibility">Accessibility</a> ·
-    <a href="https://git.sr.ht/~gosha/gosha.net">Source code</a> ·
-    <a href="/feed.xml" class="rss-link">
-      <span class="link-text">RSS</span>
-      {% include rss_logo.svg %}
-    </a> ·
-    <a href="https://webring.xxiivv.com/#random" target="_blank" class="webring-link">Webring</a> ·
-    <a href="https://ko-fi.com/goshadotnet">Support my work on Ko-Fi</a>
+    &copy; 2007&ndash;2024 Gosha Tcherednitchenko
   </p>
-  <p>
-    <a href="/links">
-      <img src="/assets/images/88x31.svg" width="88" height="31" alt="A banner showing four icons: a pirate flag, a square ruler, a camera, and a pencil." title="Link free!">
-    </a>
-  </p>
+  <div class="columns">
+    <div class="col">
+      <p>
+        <a href="/colophon">Colophon</a><br/>
+        <a href="/accessibility">Accessibility statement</a><br/>
+        <a href="https://git.sr.ht/~gosha/gosha.net">Source code</a><br/>
+        <a href="/feed.xml" class="rss-link">
+          <span class="link-text">Subscribe to RSS</span>
+          {% include rss_logo.svg %}
+        </a>
+      </p>
+    </div>
+    <div class="col">
+      <p>
+        <a href="https://webring.xxiivv.com/#80" target="_blank" class="webring-link" rel="noopener">Merveilles Webring</a> (<a href="https://lieu.cblgh.org/random">Random</a>)<br/>
+        <a href="https://ko-fi.com/goshadotnet">Support my work on Ko-Fi</a>
+      </p>
+      <p>
+        <a href="/links">
+          <img src="/assets/images/88x31.svg" width="88" height="31" alt="A banner showing four icons: a pirate flag, a square ruler, a camera, and a pencil." title="Link free!">
+        </a>
+      </p>
+    </div>
+  </div>
   {% assign lyric = site.data.lyrics | sample: 1 %}
   <p class="motto">{{ lyric }}</p>
 </footer>
