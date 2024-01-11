@@ -1,16 +1,21 @@
 
 .project-metadata {
   font-family: var(--font-mono);
-  font-size: var(--font-small);
+  font-size: var(--font-x-small);
+  text-transform: uppercase;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 1rem;
+  margin-left: -0.3rem;
 
   .metadata-item {
     white-space: nowrap;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    background-color: var(--color-emphasis);
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.3rem;
   }
 }
 

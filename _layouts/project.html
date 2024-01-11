@@ -4,14 +4,14 @@ active: projects
 ---
 <header>
   <h1>{{ page.title }}</h1>
-  <aside class="project-metadata">
-    <div class="metadata-item timespan"><i class="twa twa-hourglass-not-done"></i> {{ page.timespan | safe }}</div>
+  <div class="project-metadata">
+    <div class="metadata-item timespan">{{ page.timespan | safe }}</div>
     {% for category in page.categories %}
       <div class="metadata-item tags">
-        <i class="twa twa-label"></i> {{ category }}
+        {{ category }}
       </div>
     {% endfor %}
-  </aside>
+  </div>
 </header>
 
 {{ content | safe }}
