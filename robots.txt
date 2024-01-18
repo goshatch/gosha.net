@@ -1,5 +1,15 @@
+# There's no reason to index fonts
+User-agent: *
+Disallow: /assets/fonts
+
+# Lol no
 User-agent: GPTBot
 Disallow: /
 
-‍User-agent: Google-Extended
+# Same
+User-agent: Google-Extended
+Disallow: /
+
+# Used for Alexa, I guess, who cares
+User-agent: Amazonbot
 Disallow: /
