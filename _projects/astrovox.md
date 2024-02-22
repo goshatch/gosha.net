@@ -44,7 +44,7 @@ The following features are planned for a first release:
 ### Download
 
 ASTROVOX is currently in development, and no official release is available yet.
-The source code is available [on Sourcehut](https://git.sr.ht/~gosha/astrovox).
+The source code is available [on GitHub](https://github.com/goshatch/astrovox).
 
-Bug reports and patches are very welcome, and can be submitted via my [public
-inbox](https://lists.sr.ht/~gosha/public-inbox) on Sourcehut.
+Bug reports and pull requests are very welcome, and can be submitted via the
+GitHub repository.

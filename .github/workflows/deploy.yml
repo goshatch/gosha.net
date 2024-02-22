@@ -1,0 +1,43 @@
+name: Build and Deploy site
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.2.2
+    - name: Setup SSH Key
+      run: |
+        mkdir -p ~/.ssh
+        echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+    - name: Install dependencies
+      run: |
+        sudo apt-get update -y
+        sudo apt-get install -y ruby-dev libffi-dev nodejs rsync
+        gem install bundler
+    - name: Build
+      run: |
+        bundle install
+        /bin/sh ./updategitinfo.sh
+        bundle exec jekyll build
+    - name: Deploy
+      env:
+        DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+        DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        SITE_PATH: ${{ secrets.SITE_PATH }}
+      run: |
+        cd build
+        rsync -rvlh --delete . $DEPLOY_USER@$DEPLOY_HOST:$SITE_PATH
