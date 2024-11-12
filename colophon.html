@@ -8,23 +8,65 @@ title: Colophon
 </header>
 
 <section>
-  <p><code>gosha.net</code> is designed, written, and produced by <a href="/about" rel="author">Gosha Tcherednitchenko</a>, with illustrations by T.L.</p>
-  <p>Typeset in <a href="https://github.com/IBM/plex">IBM Plex Sans</a> and <a href="https://berkeleygraphics.com/typefaces/berkeley-mono/">Berkeley Mono</a>.</p>
+  <p>
+    <code>gosha.net</code> is designed, written, and produced by
+    <a href="/about" rel="author">Gosha Tcherednitchenko</a>, with illustrations
+    by T.L.
+  </p>
+  <p>
+    Typeset in <a href="https://github.com/IBM/plex">IBM Plex Sans</a> and
+    <a href="https://berkeleygraphics.com/typefaces/berkeley-mono/"
+      >Berkeley Mono</a
+    >.
+  </p>
   <p>Essential tools used in production include:</p>
   <ul>
-    <li>HTML generation: <a href="https://www.jekyllrb.com/">Jekyll 4.3</a>, with <a href="https://github.com/jekyll/jekyll-feed">jekyll-feed</a> and <a href="https://github.com/vwochnik/jekyll-autoprefixer">jekyll-autoprefixer</a></li>
-    <li>Code editing, task management, general purpose operating system: <a href="https://www.gnu.org/software/emacs/">Emacs</a></li>
-    <li>Version control: <a href="https://git-scm.com/">Git</a> via <a href="https://magit.vc">Magit</a></li>
-    <li>Builds and automatic deployment: <a href="https://docs.github.com/en/actions">GitHub Actions</a></li>
-    <li>Hosting: <a href="https://openbsd.org" class="openbsd"><span class="open">Open</span><span class="bsd">BSD</span></a> 7.4/httpd at <a href="https://cloud.hetzner.com">Hetzner Cloud</a><br/></li>
+    <li>
+      HTML generation: <a href="https://www.jekyllrb.com/">Jekyll 4.3</a>, with
+      <a href="https://github.com/jekyll/jekyll-feed">jekyll-feed</a> and
+      <a href="https://github.com/vwochnik/jekyll-autoprefixer"
+        >jekyll-autoprefixer</a
+      >
+    </li>
+    <li>
+      Code editing, task management, general purpose operating system:
+      <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+    </li>
+    <li>
+      Version control: <a href="https://git-scm.com/">Git</a> via
+      <a href="https://magit.vc">Magit</a>
+    </li>
+    <li>
+      Builds and automatic deployment:
+      <a href="https://docs.github.com/en/actions">GitHub Actions</a>
+    </li>
+    <li>
+      Hosting:
+      <a href="https://openbsd.org" class="openbsd"
+        ><span class="open">Open</span><span class="bsd">BSD</span></a
+      >
+      7.6/httpd at <a href="https://cloud.hetzner.com">Hetzner Cloud</a><br />
+    </li>
   </ul>
-  <p>The site uses icons from <a href="https://github.com/twitter/twemoji">Twemoji</a> by Twitter, via <a href="https://github.com/SebastianAigner/twemoji-amazing">twemoji-amazing</a>, and an RSS feed icon adapted from <a href="http://www.feedicons.com/">FeedIcons</a>.</p>
+  <p>
+    The site uses icons from
+    <a href="https://github.com/twitter/twemoji">Twemoji</a> by Twitter, via
+    <a href="https://github.com/SebastianAigner/twemoji-amazing"
+      >twemoji-amazing</a
+    >, and an RSS feed icon adapted from
+    <a href="http://www.feedicons.com/">FeedIcons</a>.
+  </p>
 </section>
 
 <section>
   <h3>Privacy statement</h3>
   <p>This is a static website; it does not use cookies.</p>
-  <p>I use <a href="https://plausible.io">Plausible</a>, a privacy-focused analytics tool, to collect limited non-personally identifiable stats on visitors. Please see <a href="https://plausible.io/data-policy">their data policy</a>.</p>
+  <p>
+    I use <a href="https://plausible.io">Plausible</a>, a privacy-focused
+    analytics tool, to collect limited non-personally identifiable stats on
+    visitors. Please see
+    <a href="https://plausible.io/data-policy">their data policy</a>.
+  </p>
 </section>
 
 <section>
@@ -35,11 +77,18 @@ title: Colophon
 <section>
   <h3>Build information</h3>
   <p>
-    Last updated on {{ site.data.git.date | readableDate }}<br/>
-    <code><a href="https://github.com/goshatch/gosha.net/commit/{{ site.data.git.commitHash }}">{{ site.data.git.commitHash }}</a></code>
+    Last updated on {{ site.data.git.date | readableDate }}<br />
+    <code
+      ><a
+        href="https://github.com/goshatch/gosha.net/commit/{{ site.data.git.commitHash }}"
+        >{{ site.data.git.commitHash }}</a
+      ></code
+    >
     &rarr; {{ site.data.git.subject }}
   </p>
   <p>
-    Made with <i class="twa twa-red-heart"></i> in London <i class="twa twa-flag-european-union"></i><i class="twa twa-flag-united-kingdom"></i>
+    Made with <i class="twa twa-red-heart"></i> in London
+    <i class="twa twa-flag-european-union"></i
+    ><i class="twa twa-flag-united-kingdom"></i>
   </p>
 </section>
