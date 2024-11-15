@@ -8,7 +8,7 @@ footer {
     margin-left: -1rem;
     position: relative;
     &::before {
-      content: '↑';
+      content: "↑";
       position: absolute;
       left: 0;
       top: -2px;
@@ -24,7 +24,7 @@ footer {
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: 100% -2px;
-    background-image: url('/assets/images/icons/webring-icon.black.svg');
+    background-image: url("/assets/images/icons/webring-icon.black.svg");
   }
 
   .motto {
@@ -44,28 +44,118 @@ footer {
     margin: 0 auto;
     gap: 1rem;
   }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    margin-top: 1.5em;
+
+    .icon {
+      display: inline-flex;
+      gap: 0.5em;
+      align-items: center;
+    }
+
+    .mastodon svg {
+      height: 1.3em;
+      width: 1.3em;
+      transition: 100ms;
+    }
+
+    .bluesky-flutter svg {
+      width: 1.4em;
+      height: 1.4em;
+      transition: 200ms;
+    }
+
+    .bluesky-flutter .left {
+      transform-origin: center;
+    }
+    .bluesky-flutter .right {
+      transform-origin: center;
+      transform: scale(-1, 1);
+    }
+    .bluesky-flutter:hover .left,
+    .bluesky-flutter:focus .left {
+      animation: flutter 430ms ease-in-out;
+      --flip: 1;
+    }
+    .bluesky-flutter:hover .right,
+    .bluesky-flutter:focus .right {
+      animation: flutter 500ms ease-in-out;
+      --flip: -1;
+    }
+    .bluesky-flutter:hover svg,
+    .bluesky-flutter:focus svg {
+      transform: rotate(-5deg);
+      transition: 500ms;
+    }
+  }
 }
 
 @media (max-width: 480px) {
   footer {
     .columns {
-      display: block;
+      flex-direction: column;
+    }
+    .links {
+      flex-direction: row;
+    }
+    .socials {
+      margin-bottom: 1em;
     }
   }
 }
 
 @media (prefers-color-scheme: dark) {
   footer .webring-link {
-    background-image: url('/assets/images/icons/webring-icon.white.svg');
+    background-image: url("/assets/images/icons/webring-icon.white.svg");
   }
 
   html.light footer .webring-link {
-    background-image: url('/assets/images/icons/webring-icon.black.svg');
+    background-image: url("/assets/images/icons/webring-icon.black.svg");
   }
 }
 
 @media (prefers-color-scheme: light) {
   html.dark footer .webring-link {
-    background-image: url('/assets/images/icons/webring-icon.white.svg');
+    background-image: url("/assets/images/icons/webring-icon.white.svg");
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .bluesky-flutter:hover .left,
+  .bluesky-flutter:focus .left,
+  .bluesky-flutter:hover .right,
+  .bluesky-flutter:focus .right {
+    animation: none;
+  }
+}
+
+@keyframes flutter {
+  10% {
+    transform: scale(calc(var(--flip) * 1), 0.9);
+  }
+  20% {
+    transform: scale(calc(var(--flip) * 0.5), 1);
+  }
+  40% {
+    transform: scale(calc(var(--flip) * 0.9), 0.95);
+  }
+  60% {
+    transform: scale(calc(var(--flip) * 0.3), 1);
+  }
+  80% {
+    transform: scale(calc(var(--flip) * 0.9), 0.95);
+  }
+  100% {
+    transform: scale(calc(var(--flip) * 1), 1);
   }
 }

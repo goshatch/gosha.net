@@ -1,16 +1,14 @@
 <footer>
   <p>
-    <a href='#' class="back-to-top">Back to top</a>
+    <a href="#" class="back-to-top">Back to top</a>
   </p>
-  <p>
-    &copy; 2007&ndash;2024 Gosha Tcherednitchenko
-  </p>
+  <p>&copy; 2007&ndash;2024 Gosha Tcherednitchenko</p>
   <div class="columns">
     <div class="col">
       <p>
-        <a href="/colophon">Colophon</a><br/>
-        <a href="/accessibility">Accessibility statement</a><br/>
-        <a href="https://github.com/goshatch/gosha.net">Source code</a><br/>
+        <a href="/colophon">Colophon</a><br />
+        <a href="/accessibility">Accessibility statement</a><br />
+        <a href="https://github.com/goshatch/gosha.net">Source code</a><br />
         <a href="/feed.xml" class="rss-link">
           <span class="link-text">Subscribe to RSS</span>
           {% include rss_logo.svg %}
@@ -19,14 +17,80 @@
     </div>
     <div class="col">
       <p>
-        <a href="https://webring.xxiivv.com/#80" target="_blank" class="webring-link" rel="noopener">Merveilles Webring</a> (<a href="https://lieu.cblgh.org/random">Random</a>)<br/>
+        <a
+          href="https://webring.xxiivv.com/#80"
+          target="_blank"
+          class="webring-link"
+          rel="noopener"
+          >Merveilles Webring</a
+        >
+        (<a href="https://lieu.cblgh.org/random">Random</a>)<br />
         <a href="https://ko-fi.com/goshadotnet">Support my work on Ko-Fi</a>
       </p>
-      <p>
-        <a href="/links">
-          <img src="/assets/images/88x31.svg" width="88" height="31" alt="A banner showing four icons: a pirate flag, a square ruler, a camera, and a pencil." title="Link free!">
+      <div class="socials">
+        <a
+          href="https://merveilles.town/@gosha"
+          class="mastodon icon"
+          target="_blank"
+          rel="me"
+        >
+          <svg
+            class="icon"
+            role="img"
+            aria-label="The Merveilles logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 6 6"
+          >
+            <path
+              fill="currentColor"
+              d="M2 2a2 2 0 0 0-2-2v2zm2 0a2 2 0 0 0-2-2v2zm0-2a2 2 0 0 0-2 2h2zm2 0a2 2 0 0 0-2 2h2zM1 2a1 1 0 0 0 0 2 1 1 0 0 0 0-2m2 0a1 1 0 0 0 0 2 1 1 0 0 0 0-2m2 0a1 1 0 0 0 0 2 1 1 0 0 0 0-2M0 6a2 2 0 0 0 2-2H0zm2 0a2 2 0 0 0 2-2H2zm0-2a2 2 0 0 0 2 2V4zm2 0a2 2 0 0 0 2 2V4z"
+            ></path>
+          </svg>
+          Mastodon
         </a>
-      </p>
+        <a
+          href="https://bsky.app/profile/gosha.net"
+          target="_blank"
+          rel="me"
+          class="bluesky-flutter icon"
+          ><svg
+            id="flutterby"
+            class="bluesky-flutter"
+            viewBox="0 0 566 500"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="The logo of the Bluesky social network"
+          >
+            <defs>
+              <path
+                id="wing"
+                fill="currentColor"
+                d="M 123.244 35.008 C 188.248 83.809 283.836 176.879 283.836 235.857 C 283.836 316.899 283.879 235.845 283.836 376.038 C 283.889 375.995 282.67 376.544 280.212 383.758 C 266.806 423.111 214.487 576.685 94.841 453.913 C 31.843 389.269 61.013 324.625 175.682 305.108 C 110.08 316.274 36.332 297.827 16.093 225.504 C 10.271 204.699 0.343 76.56 0.343 59.246 C 0.343 -27.451 76.342 -0.206 123.244 35.008 Z"
+              />
+            </defs>
+            <use xlink:href="#wing" class="left" />
+            <use xlink:href="#wing" class="right" />
+          </svg>
+          Bluesky
+        </a>
+      </div>
+    </div>
+    <div class="links">
+      <a href="/links">
+        <img
+          src="/assets/images/88x31.svg"
+          width="88"
+          height="31"
+          alt="A banner showing four icons: a pirate flag, a square ruler, a camera, and a pencil."
+          title="Link free!"
+      /></a>
+      <a href="https://infrequently.org/stickers/">
+        <img
+          src="/assets/images/antijsjsclub.png"
+          width="88"
+          height="31"
+          alt="Bare minimum JavaScript used"
+          title="Anti JavaScript JavaScript Club"
+      /></a>
     </div>
   </div>
   {% assign lyric = site.data.lyrics | sample: 1 %}
