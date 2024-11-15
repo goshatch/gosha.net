@@ -1,32 +1,33 @@
 @mixin dark-colors {
-  --color-bg: #161616;
-  --color-text: #aaa;
-  --color-text-subdued: #888888;
-  --color-link: #fff;
-  --color-link-subdued: #bbb;
-  --color-emphasis: #000000;
-  --color-emphasis-reversed: #fff8e0;
+  --color-bg: oklch(0.22 0 0);
+  --color-text: oklch(0.6 0 0);
+  --color-text-subdued: oklch(0.53 0 0);
+  --color-link: oklch(1 0 0);
+  --color-link-subdued: oklch(0.88 0 0);
+  --color-emphasis: oklch(0 0 0);
+  --color-emphasis-reversed: oklch(0.98 0.08 83.33);
 }
 
 @mixin light-colors {
-  --color-bg: #ffffff;
-  --color-text: #444444;
-  --color-text-subdued: #666666;
-  --color-link: #000000;
-  --color-link-subdued: #222;
-  --color-emphasis: #fff8e0;
-  --color-emphasis-reversed: #000000;
+  --color-bg: oklch(0.916374 0.034554 90.5157);
+  --color-text: oklch(0.37 0 0);
+  --color-text-subdued: oklch(0.5 0 0);
+  --color-link: oklch(0 0 0);
+  --color-link-subdued: oklch(0.13 0 0);
+  --color-emphasis: oklch(0.882722 0.049418 91.7743);
+  --color-emphasis-reversed: oklch(0 0 0);
 }
 
-:root, :root.light {
+:root,
+:root.light {
   @include light-colors;
-  --color-highlight: #c97ae6;
+  --color-highlight: oklch(0.65 0.17 25.12);
   --color-link-hover: var(--color-highlight);
-  --color-emphasis-text: #888;
+  --color-emphasis-text: oklch(0.55 0 0);
   --color-neutral: rgba(128, 128, 128, 0.3);
   --max-width: 36rem;
-  --font-sans: 'body', sans-serif;
-  --font-mono: 'mono', monospace;
+  --font-sans: "body", sans-serif;
+  --font-mono: "mono", monospace;
   --max-image-width: 50rem;
   --font-small: 0.85rem;
   --font-x-small: 0.65rem;
@@ -48,9 +49,18 @@
 
 html {
   font: 18px/28px var(--font-sans);
-  -webkit-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
-  -moz-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
-  font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
+  -webkit-font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "calt" 1;
+  -moz-font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "calt" 1;
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "calt" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -83,18 +93,37 @@ main {
   }
 }
 
-p, pre, code, ul, ol {
+p,
+pre,
+code,
+ul,
+ol {
   margin-top: 0px;
 }
 
-p, h1, h2, h3, h4, time, blockquote, pre, code, ul, ol, table, aside, .footnotes, .centered {
+p,
+h1,
+h2,
+h3,
+h4,
+time,
+blockquote,
+pre,
+code,
+ul,
+ol,
+table,
+aside,
+.footnotes,
+.centered {
   width: 100%;
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
 }
 
-pre, code {
+pre,
+code {
   font-family: var(--font-mono);
 }
 
@@ -111,7 +140,7 @@ blockquote > author {
 
 a {
   color: var(--color-link);
-  transition: color .2s ease-out;
+  transition: color 0.2s ease-out;
 }
 a:hover {
   color: var(--color-link-hover);
@@ -123,7 +152,7 @@ a:hover {
   a {
     position: relative;
     &::before {
-      content: '←';
+      content: "←";
       position: absolute;
       left: -1.8rem;
       top: -0.2rem;
@@ -131,7 +160,10 @@ a:hover {
   }
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.2;
   font-weight: 600;
   color: var(--color-link);
@@ -145,7 +177,8 @@ h2 {
   font-size: 1.5rem;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 1rem;
   li {
     padding-left: 0.3rem;
@@ -217,7 +250,7 @@ main.about {
   }
 }
 
-section[name='bio'] figure.centered {
+section[name="bio"] figure.centered {
   margin-top: -2rem;
 }
 
@@ -241,7 +274,8 @@ sup.reference {
   }
 }
 
-section, article {
+section,
+article {
   width: 100%;
   // max-width: var(--max-width);
   margin: 0 auto;
@@ -261,7 +295,7 @@ section, article {
     background-color: var(--color-neutral);
     height: 1px;
     width: 6rem;
-    content: '';
+    content: "";
     margin-top: 8rem;
     margin-bottom: 1rem;
   }
@@ -280,16 +314,20 @@ section, article {
 }
 
 .openbsd {
-  text-decoration-color: #CF4229;
+  text-decoration-color: #cf4229;
   font-family: serif;
   font-weight: bold;
   .open {
-    color: #F2CA30;
+    color: #f2ca30;
     font-style: italic;
   }
   .bsd {
-    color: #CF4229;
+    color: #cf4229;
   }
+}
+
+.light .openbsd .open {
+  color: #c7a10f;
 }
 
 ul.task-list {
