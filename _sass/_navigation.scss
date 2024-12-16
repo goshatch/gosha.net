@@ -22,19 +22,32 @@ body .content > header > nav > ul {
 
 body .content > header > nav > ul > li {
   padding-left: 0;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 4rem;
 }
 
 body .content > header > nav > ul > li a {
   text-decoration: none;
   &.nav-item {
     display: block;
-    line-height: 2rem;
+    line-height: 4rem;
     .nav-item-label {
       white-space: nowrap;
     }
   }
   &.active {
     color: var(--color-highlight);
+  }
+}
+
+.logo {
+  margin-top: -0.2rem;
+  a > svg {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: var(--color-logo-bg);
   }
 }
 
@@ -57,7 +70,8 @@ body .content > header > nav > ul > li a {
   }
 }
 
-.light .theme-toggle, .dark .theme-toggle:hover {
+.light .theme-toggle,
+.dark .theme-toggle:hover {
   .twa-moon {
     display: none;
   }
@@ -66,7 +80,8 @@ body .content > header > nav > ul > li a {
   }
 }
 
-.dark .theme-toggle, .light .theme-toggle:hover {
+.dark .theme-toggle,
+.light .theme-toggle:hover {
   .twa-sun {
     display: none;
   }
@@ -105,5 +120,14 @@ body .content > header > nav > ul > li a {
     top: 0.1rem;
     right: 0px;
     width: 2.5rem !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 675px) {
+  body .content > header > nav > ul > li {
+    line-height: 2rem;
+    a.nav-item {
+      line-height: 2rem;
+    }
   }
 }
