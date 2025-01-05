@@ -28,7 +28,8 @@ url: https://gosha.net # the base hostname & protocol for your site, e.g. http:/
 permalink: pretty
 timezone: Europe/London
 meta:
-  theme_color: "#000"
+  theme_color_light: "#e4d8b4"
+  theme_color_dark: "#000"
   twitter_card_type: "summary"
   twitter: "goshatch"
   mastodon: "@gosha@merveilles.town"
