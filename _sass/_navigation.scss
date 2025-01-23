@@ -48,6 +48,10 @@ body .content > header > nav > ul > li a {
     height: 4rem;
     border-radius: 50%;
     color: var(--color-logo-bg);
+    transition: color 0.2s ease-out;
+  }
+  &:hover a > svg {
+    color: var(--color-highlight)
   }
 }
 
