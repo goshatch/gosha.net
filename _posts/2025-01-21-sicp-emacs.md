@@ -4,7 +4,7 @@ title: "SICP in Doom Emacs"
 date: 2025-01-21 15:00:00 +0000
 location: London
 categories: ['sicp', 'emacs', 'doom', 'programming', 'org-mode', 'scheme']
-summary: "Setting up Doom Emacs, Geyser, and Racket for working through the exercises in Structure and Interpretation of Computer Programs"
+summary: "Setting up Doom Emacs, Geyser, and Racket for working through the exercises in Structure and Interpretation of Computer Programs."
 featured_image: /assets/images/posts/2025/sicp-emacs/sicp.jpg
 ---
 
