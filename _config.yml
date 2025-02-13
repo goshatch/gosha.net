@@ -48,10 +48,7 @@ plugins:
   - jekyll/mastodon_webfinger
 
 exclude:
-  - updategitinfo.sh
   - README.md
-
-destination: build
 
 jekyll-figure:
   paragraphs: false
