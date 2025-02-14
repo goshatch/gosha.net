@@ -27,9 +27,11 @@ permalink: /humans.txt
 Name: {{ site.author }}
 Site: {{ site.url }}
 Mastodon: {{ site.meta.mastodon }}
+Twitter: {{ site.meta.twitter }}
+Bluesky: {{ site.meta.bluesky }}
 
 /* SITE */
 Standards: HTML5, CSS3
 Static site generator: Jekyll 4.3.2
-Version: {{ site.data.git.commitHash }}
+Version: {{ site.data.git.hash }}
 Updated: {{ site.data.git.date }}

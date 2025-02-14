@@ -31,8 +31,9 @@ meta:
   theme_color_light: "#e4d8b4"
   theme_color_dark: "#000"
   twitter_card_type: "summary"
-  twitter: "goshatch"
+  twitter: "@goshatch"
   mastodon: "@gosha@merveilles.town"
+  bluesky: "@gosha.net"
   github_username: "goshatch"
   default_social_image: "/assets/images/default_social.png"
 
