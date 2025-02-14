@@ -4,6 +4,11 @@ code {
   background-color: var(--color-emphasis);
 }
 
+code.block {
+  display: block;
+  margin: 0.5em -0.5em 0;
+}
+
 div.highlighter-rouge {
   width: 100%;
   max-width: var(--max-width);

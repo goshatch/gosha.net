@@ -78,14 +78,11 @@ title: Colophon
   <h3>Build information</h3>
   {%- assign commit = site.data.git -%}
   <p>
-    Last updated on {{ commit.date | readableDate }}<br />
-    <code
-      ><a
-        href="https://github.com/goshatch/gosha.net/commit/{{ commit.hash }}"
-        >{{ commit.hash }}</a
-      ></code
-    >
-    &rarr; {{ commit.subject }}
+    Last updated on <time datetime="{{ commit.date | date: "%Y-%m-%d" }}">{{ commit.date | date: "%e %B, %Y" }}</time>:
+    <code class="block">
+      <a href="https://github.com/goshatch/gosha.net/commit/{{ commit.hash }}">{{ commit.hash }}</a>
+      &rarr; {{ commit.subject }}
+    </code>
   </p>
   <p>
     Made with <i class="twa twa-red-heart"></i> in London
