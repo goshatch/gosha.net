@@ -20,8 +20,7 @@
   --color-emphasis-reversed: oklch(0 0 0);
 }
 
-:root,
-:root.light {
+:root {
   @include light-colors;
   --color-highlight: oklch(0.65 0.17 25.12);
   --color-link-hover: var(--color-highlight);
@@ -33,10 +32,6 @@
   --max-image-width: 50rem;
   --font-small: 0.85rem;
   --font-x-small: 0.65rem;
-}
-
-:root.dark {
-  @include dark-colors;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -320,7 +315,7 @@ article {
   font-family: serif;
   font-weight: bold;
   .open {
-    color: #f2ca30;
+    color: #c7a10f;
     font-style: italic;
   }
   .bsd {
@@ -328,8 +323,10 @@ article {
   }
 }
 
-.light .openbsd .open {
-  color: #c7a10f;
+@media (prefers-color-scheme: dark) {
+  .openbsd .open {
+    color: #f2ca30;
+  }
 }
 
 ul.task-list {
