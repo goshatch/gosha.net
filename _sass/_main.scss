@@ -363,20 +363,6 @@ ul.task-list {
   .newsletter h1.logo-title {
     background-image: url(/assets/images/newsletter/logo-white.svg);
   }
-
-  html.light .newsletter h1.logo-title {
-    background-image: url(/assets/images/newsletter/logo-black.svg);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .newsletter h1.logo-title {
-    background-image: url(/assets/images/newsletter/logo-black.svg);
-  }
-
-  html.dark .newsletter h1.logo-title {
-    background-image: url(/assets/images/newsletter/logo-white.svg);
-  }
 }
 
 @media (max-width: 480px) {

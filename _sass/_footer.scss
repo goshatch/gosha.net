@@ -118,16 +118,6 @@ footer {
   footer .webring-link {
     background-image: url("/assets/images/icons/webring-icon.white.svg");
   }
-
-  html.light footer .webring-link {
-    background-image: url("/assets/images/icons/webring-icon.black.svg");
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  html.dark footer .webring-link {
-    background-image: url("/assets/images/icons/webring-icon.white.svg");
-  }
 }
 
 @media (prefers-reduced-motion) {

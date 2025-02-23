@@ -226,16 +226,8 @@ div.highlighter-rouge {
   }
 }
 
-:root.dark {
-  @include dark-code-colors;
-}
-
 @media (prefers-color-scheme: dark) {
   @include dark-code-colors;
-}
-
-:root.light {
-  @include light-code-colors;
 }
 
 @media (prefers-color-scheme: light) {
