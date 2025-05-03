@@ -3,7 +3,7 @@ layout: post
 title: "Out with CI, in with a Makefile"
 date: 2025-02-23 05:53:51 +0000
 location: London
-categories: ['meta', 'makefile', 'overengineering', 'technical']
+categories: ['meta', 'makefile', 'overengineering', 'technical', ’simplify’]
 summary: "I really do not need to cosplay as a Big Engineering Organisation"
 ---
 
