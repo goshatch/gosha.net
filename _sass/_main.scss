@@ -260,15 +260,27 @@ section[name="bio"] figure.centered {
   text-align: center;
 }
 
-sup.reference {
+sup {
   display: inline-block;
+  line-height: normal;
   min-width: 0.5rem;
-  margin-left: 0.1rem;
   text-align: center;
+  background-color: var(--color-emphasis);
+  font-size: 0.7rem;
+  border-radius: 50%;
   a {
     text-decoration: none;
     display: block;
+    padding: 0 0.2rem;
   }
+}
+
+a.reversefootnote {
+  text-decoration: none;
+  padding: 0 0.2rem;
+  background-color: var(--color-emphasis);
+  border-radius: 50%;
+  font-size: 0.7rem;
 }
 
 section,
