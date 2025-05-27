@@ -5,7 +5,8 @@
   }
 }
 
-.blog, .projects {
+.blog,
+.projects {
   & > header {
     h1 {
       position: relative;
@@ -50,11 +51,13 @@
       padding-bottom: 56.25%;
       padding-top: 30px;
       height: 0;
-      overflow:hidden;
-      iframe, object, embed {
-        position:absolute;
-        top:0;
-        left:0;
+      overflow: hidden;
+      iframe,
+      object,
+      embed {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
       }
@@ -76,7 +79,8 @@
       line-height: 4rem;
     }
   }
-  h2, h3 {
+  h2,
+  h3 {
     margin-top: 3rem;
   }
 }
@@ -113,11 +117,21 @@
       margin-top: 0.5rem;
     }
   }
-  &:nth-child(2n) .featured-image { transform: rotate(-4deg) }
-  &:nth-child(3n) .featured-image { transform: rotate(2deg) }
-  &:nth-child(4n) .featured-image { transform: rotate(-5deg) }
-  &:nth-child(5n) .featured-image { transform: rotate(4deg) }
-  &:nth-child(6n) .featured-image { transform: rotate(-3deg) }
+  &:nth-child(2n) .featured-image {
+    transform: rotate(-4deg);
+  }
+  &:nth-child(3n) .featured-image {
+    transform: rotate(2deg);
+  }
+  &:nth-child(4n) .featured-image {
+    transform: rotate(-5deg);
+  }
+  &:nth-child(5n) .featured-image {
+    transform: rotate(4deg);
+  }
+  &:nth-child(6n) .featured-image {
+    transform: rotate(-3deg);
+  }
 }
 
 .meta .location {
@@ -128,4 +142,20 @@
 
 aside.comments {
   margin-top: 4rem;
+}
+
+blockquote[data-source="fediverse"] {
+  background-image: url(/assets/images/icons/mastodon-avatar.png);
+  background-size: 2.5rem 2.5rem;
+  background-repeat: no-repeat;
+  background-position: 1rem 1rem;
+  background-color: var(--color-mastodon-embed-bg);
+  padding: 1rem;
+  padding-left: 4rem;
+  border-radius: 1rem;
+  border: 0px;
+
+  footer {
+    margin: 1rem 0 0;
+  }
 }

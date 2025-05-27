@@ -7,6 +7,7 @@
   --color-emphasis: oklch(0 0 0);
   --color-logo-bg: oklch(0.6 0 0);
   --color-emphasis-reversed: oklch(0.98 0.08 83.33);
+  --color-mastodon-embed-bg: black;
 }
 
 @mixin light-colors {
@@ -18,6 +19,7 @@
   --color-emphasis: oklch(0.882722 0.049418 91.7743);
   --color-logo-bg: oklch(0.882722 0.049418 91.7743);
   --color-emphasis-reversed: oklch(0 0 0);
+  --color-mastodon-embed-bg: white;
 }
 
 :root {
