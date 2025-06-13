@@ -25,6 +25,23 @@ body .content > header > nav > ul > li {
   flex-direction: column;
   justify-content: center;
   line-height: 4rem;
+  position: relative;
+}
+
+body .content > header > nav > ul > li > span.badge {
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  font-family: var(--font-sans);
+  line-height: 1em;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 0.2rem 0.3rem;
+  transform: rotate(12deg);
 }
 
 body .content > header > nav > ul > li a {
@@ -69,6 +86,12 @@ body .content > header > nav > ul > li a {
   }
   body .content > header > nav > ul > li a.nav-item {
     line-height: 1.5rem;
+  }
+
+  body .content > header > nav > ul > li > span.badge {
+    top: -6px;
+    right: inherit;
+    left: 5.2rem;
   }
 }
 
