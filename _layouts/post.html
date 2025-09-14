@@ -18,5 +18,14 @@ active: blog
   {{ content }}
 </article>
 <aside class="comments">
-  Have a comment? Please get in touch by <a href="mailto:mail@gosha.net?subject=Re: {{ page.title }}">email</a>, or on <a href="https://merveilles.town/@gosha">Mastodon</a>.
+  {% if page.mastodon_post %}
+    <mastodon-post>
+      <a href="{{ page.mastodon_post }}">
+        Discuss on Mastodon
+      </a>
+    </mastodon-post>
+    <p>Or <a href="mailto:mail@gosha.net?subject=Re: {{ page.title }}">email</a> me!</p>
+  {% else %}
+    Have a comment? Please get in touch by <a href="mailto:mail@gosha.net?subject=Re: {{ page.title }}">email</a>, or on <a href="https://merveilles.town/@gosha">Mastodon</a>.
+  {% endif %}
 </aside>
