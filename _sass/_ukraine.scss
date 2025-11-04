@@ -2,6 +2,7 @@ section.ukraine-banner {
   background-color: var(--color-emphasis);
   padding: 0.5rem 0;
   font-size: var(--font-small);
+  text-align: center;
   .container {
     width: 100%;
     max-width: var(--max-width);
@@ -21,7 +22,9 @@ section.ukraine-banner {
 }
 
 @media (max-width: 480px) {
-  header.ukraine-banner {
-    padding: 0.5rem 2rem;
+  section.ukraine-banner {
+    text-align: left;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }

@@ -1,25 +1,27 @@
 @mixin dark-colors {
   --color-bg: oklch(0.22 0 0);
-  --color-text: oklch(0.6 0 0);
+  --color-text: oklch(0.7 0 0);
+  --color-text-strong: white;
   --color-text-subdued: oklch(0.53 0 0);
   --color-link: oklch(1 0 0);
   --color-link-subdued: oklch(0.88 0 0);
   --color-emphasis: oklch(0 0 0);
   --color-logo-bg: oklch(0.6 0 0);
   --color-emphasis-reversed: oklch(0.98 0.08 83.33);
-  --color-mastodon-embed-bg: black;
+  --color-strong-bg: black;
 }
 
 @mixin light-colors {
   --color-bg: oklch(0.916374 0.034554 90.5157);
   --color-text: oklch(0.37 0 0);
+  --color-text-strong: black;
   --color-text-subdued: oklch(0.5 0 0);
   --color-link: oklch(0 0 0);
   --color-link-subdued: oklch(0.13 0 0);
   --color-emphasis: oklch(0.882722 0.049418 91.7743);
   --color-logo-bg: oklch(0.882722 0.049418 91.7743);
   --color-emphasis-reversed: oklch(0 0 0);
-  --color-mastodon-embed-bg: white;
+  --color-strong-bg: white;
 }
 
 :root {
@@ -143,6 +145,10 @@ a {
 }
 a:hover {
   color: var(--color-link-hover);
+}
+
+strong {
+  color: var(--color-text-strong);
 }
 
 .back-to-index-link {

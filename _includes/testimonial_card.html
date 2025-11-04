@@ -1,0 +1,25 @@
+<figure class="testimonial-card">
+  <p class="body">“{{ testimonial.quote }}”</p>
+  <figcaption>
+    <div class="testimonial-avatar">
+      <img
+        src="{{ testimonial.photo }}"
+        alt="{{ testimonial.author }}"
+        loading="lazy"
+      />
+    </div>
+    <div class="testimonial-info">
+      <p class="testimonial-author">
+        {% if testimonial.url %}
+        <a
+          href="{{ testimonial.url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ testimonial.author }}</a
+        >
+        {% else %} {{ testimonial.author }} {% endif %}
+      </p>
+      <p class="testimonial-title">{{ testimonial.title }}</p>
+    </div>
+  </figcaption>
+</figure>
