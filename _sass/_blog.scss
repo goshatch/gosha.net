@@ -7,7 +7,7 @@
 
 .blog,
 .projects {
-  & > header {
+  header {
     h1 {
       position: relative;
     }
@@ -25,7 +25,7 @@
 /* NOTE: The title on the project page can be quite long, so on a narrow screen
  * it's better for the RSS link to have its own line. */
 @media (max-width: 700px) {
-  .projects > header .rss-link {
+  .projects header .rss-link {
     position: relative;
     display: block;
     margin-top: 1rem;
@@ -157,5 +157,40 @@ blockquote[data-source="fediverse"] {
 
   footer {
     margin: 1rem 0 0;
+  }
+}
+
+.blogroll {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  a {
+    display: inline-block;
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 2rem;
+  }
+
+  img.favicon,
+  .favicon-fallback {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0.5rem;
+  }
+
+  .favicon-fallback {
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background-color: var(--color-text-subdued);
+    color: var(--color-bg);
+    border-radius: 10rem;
+    text-transform: uppercase;
   }
 }
