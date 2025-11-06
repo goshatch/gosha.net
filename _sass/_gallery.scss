@@ -207,45 +207,6 @@ section.gallery {
   }
 }
 
-.double-column {
-  width: 100%;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2rem;
-  .col.gallery figcaption {
-    text-align: left;
-  }
-  .col.sticky {
-    position: sticky;
-    top: 1rem;
-    align-self: flex-start;
-  }
-  .col.text h1 {
-    margin-top: 1rem;
-  }
-  .col.text hr {
-    width: 3rem;
-    margin: 2rem auto;
-    opacity: 0.5;
-  }
-  .col.text p:first-child,
-  .col.text h2:first-child {
-    margin-top: 0px;
-  }
-}
-
-@media (max-width: 768px) {
-  .double-column {
-    grid-template-columns: 1fr;
-    .col.sticky {
-      position: unset;
-      top: auto;
-      align-self: normal;
-    }
-  }
-}
-
 .gallery-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

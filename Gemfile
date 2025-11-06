@@ -3,6 +3,7 @@ ruby File.read('.ruby-version').strip
 
 source 'https://rubygems.org'
 gem 'jekyll', '~> 4.3.2'
+gem 'nokogiri'
 gem 'pry'
 gem 'webrick'
 

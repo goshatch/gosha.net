@@ -4,19 +4,46 @@ active: blog
 title: Blog
 ---
 
-<header>
-  <h1>
-    Blog
-    <a href="/feed.xml" class="rss-link">
-      <span class="link-text">Subscribe via RSS</span>
-      {% include rss_logo.svg %}
-    </a>
-  </h1>
-</header>
+<section class="double-column with-sidebar">
+  <section class="col left-col text">
+    <header>
+      <h1>
+        Blog
+        <a href="/feed.xml" class="rss-link">
+          <span class="link-text">Subscribe via RSS</span>
+          {% include rss_logo.svg %}
+        </a>
+      </h1>
+    </header>
 
-{% assign posts = site.posts | where_exp: "item", "item.rss_only != true" %}
-{% for post in posts %}
-  {% include post_card.html %}
-{% endfor %}
+    {% assign posts = site.posts | where_exp: "item", "item.rss_only != true" %}
+    {% for post in posts %} {% include post_card.html %} {% endfor %}
 
-<h2 class="text-centered"><i class="twa twa-cricket"></i></h2>
+    <h2 class="text-centered"><i class="twa twa-cricket"></i></h2>
+  </section>
+  <section class="col right-col sidebar">
+    <section class="blogroll">
+      <header>
+        <h3>Blogroll</h3>
+        <p>Some favourite blogs from my RSS reader</p>
+      </header>
+      <ul>
+        {% for link in site.data.blogroll.links %}
+        <li>
+          <a href="{{ link.url }}" target="_blank">
+            {% if link.favicon %}
+            <img
+              src="/assets/images/blogroll/{{ link.favicon }}"
+              alt="{{ link.name }}"
+              class="favicon"
+            />
+            {% else %}
+            <span class="favicon-fallback"></span>
+            {% endif %} {{ link.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </section>
+</section>
