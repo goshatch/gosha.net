@@ -9,7 +9,7 @@ updated_at: 2025/11/05
 
 After a 4-months stint at Clausebase where I worked on really interesting natural language processing projects and some LLM-powered workflows, I am once again looking for work. 
 
-I would like to spend the next few years at a stable, friendly team where I could work on hard problems, be their programming, systems, or organisation-related.
+I would like to spend the next few years at a stable, friendly team where I could work on hard problems, be they technical or organisational.
 
 I’ve added [a page to this website](/hire) to show off my skills and experience, please take a look and [reach out](mailto:gosha@gosha.net) if your team could use my expertise.
 
