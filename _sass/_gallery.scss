@@ -168,6 +168,7 @@ section.gallery {
     display: block;
     text-decoration: none;
     color: var(--color-text-subdued);
+    border-radius: 0.3rem;
 
     &::before {
       // This is a hack to make cards square.
