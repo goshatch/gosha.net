@@ -121,6 +121,15 @@ testimonials:
     url: https://www.linkedin.com/in/m-kb/
     photo: /assets/images/hire/people/marion.jpg
 
+  - quote: |
+      I worked with Gosha for several months on a complex codebase, where he extended both our frontend (ClojureScript) and backend (Clojure). I really enjoyed his quality-driven approach, ability to independently figure out some pretty complex parts of our codebase, and nicely document his work.
+
+      Gosha is easy-going, friendly and consistently optimistic. Oh, and he's truly multilingual, not only when it comes to programming languages, but also human languages.
+    author: Maarten Truyens
+    title: Founder & CEO at ClauseBase
+    url: https://www.linkedin.com/in/maarten-truyens-5aaab299
+    photo: /assets/images/hire/people/maarten.jpg
+
   - quote: Gosha is a talented full-stack engineer with a knack for delivering intuitive user experiences. He cares about outcomes, delivers high quality work, and is a great addition to any startup or established engineering team.
     author: Charles Abbott
     title: Senior Director, Engineering at Workiva
