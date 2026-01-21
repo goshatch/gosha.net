@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'jekyll', '~> 4.3.2'
 gem 'nokogiri'
 gem 'pry'
+gem 'csv'
+gem 'base64'
 gem 'webrick'
 
 group :jekyll_plugins do

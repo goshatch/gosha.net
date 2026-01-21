@@ -6,3 +6,6 @@ _site
 .BridgeSort
 vendor
 _data/git.json
+.gems
+.direnv
+.envrc.local
