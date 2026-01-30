@@ -22,6 +22,14 @@
   }
 }
 
+.blog .yt-embed {
+  width: 100%;
+  max-width: var(--max-width);
+  height: 33vw;
+  margin: 2rem auto;
+  display: block;
+}
+
 /* NOTE: The title on the project page can be quite long, so on a narrow screen
  * it's better for the RSS link to have its own line. */
 @media (max-width: 700px) {
@@ -41,6 +49,11 @@
       display: block;
       text-align: center;
     }
+  }
+  aside {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+
   }
   .video {
     max-width: var(--max-width);
