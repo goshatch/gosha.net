@@ -22,12 +22,8 @@
   }
 }
 
-.blog .yt-embed {
-  width: 100%;
-  max-width: var(--max-width);
-  height: 33vw;
+.blog .video-container {
   margin: 2rem auto;
-  display: block;
 }
 
 /* NOTE: The title on the project page can be quite long, so on a narrow screen
