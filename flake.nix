@@ -31,6 +31,9 @@
             # For native extensions compilation
             gcc
             gnumake
+
+            # For deployment
+            rsync
           ];
 
           shellHook = ''
