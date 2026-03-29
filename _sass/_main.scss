@@ -130,7 +130,8 @@ code {
 
 blockquote {
   border-left: 3px solid var(--color-neutral);
-  padding-left: 2rem;
+  padding-left: 1rem;
+  color: var(--color-text-strong);
 }
 
 blockquote > author {

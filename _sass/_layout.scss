@@ -1,8 +1,7 @@
-.double-column {
+.columns {
   width: 100%;
   max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-column-gap: 2rem;
   .col.gallery figcaption {
     text-align: left;
@@ -24,9 +23,15 @@
   .col.text h2:first-child {
     margin-top: 0px;
   }
-
   .col * {
     max-width: 100%;
+  }
+
+  &.double {
+    grid-template-columns: 1fr 1fr;
+  }
+  &.triple {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -48,7 +53,8 @@
 }
 
 @media (max-width: 768px) {
-  .double-column,
+  .columns.double,
+  .columns.triple,
   .column-sidebar {
     grid-template-columns: 1fr;
     .col.sticky {
