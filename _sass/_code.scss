@@ -16,25 +16,32 @@ div.highlighter-rouge {
 }
 
 .highlight {
-  code, pre {
+  code,
+  pre {
     display: block;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
 }
 
 @mixin light-code-colors {
-  .highlight table td { padding: 5px; }
-  .highlight table pre { margin: 0; }
-  .highlight, .highlight .w {
-    color: #282828;
-    background-color: #fbf1c7;
+  .highlight table td {
+    padding: 5px;
+  }
+  .highlight table pre {
+    margin: 0;
   }
   .highlight .err {
     color: #9d0006;
     background-color: #fbf1c7;
     font-weight: bold;
   }
-  .highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  .highlight .c,
+  .highlight .ch,
+  .highlight .cd,
+  .highlight .cm,
+  .highlight .cpf,
+  .highlight .c1,
+  .highlight .cs {
     color: #928374;
   }
   .highlight .cp {
@@ -43,10 +50,12 @@ div.highlighter-rouge {
   .highlight .nt {
     color: #9d0006;
   }
-  .highlight .o, .highlight .ow {
+  .highlight .o,
+  .highlight .ow {
     color: #282828;
   }
-  .highlight .p, .highlight .pi {
+  .highlight .p,
+  .highlight .pi {
     color: #282828;
   }
   .highlight .gi {
@@ -61,7 +70,11 @@ div.highlighter-rouge {
     color: #79740e;
     font-weight: bold;
   }
-  .highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  .highlight .k,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kv {
     color: #9d0006;
   }
   .highlight .kc {
@@ -73,7 +86,15 @@ div.highlighter-rouge {
   .highlight .kd {
     color: #af3a03;
   }
-  .highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  .highlight .s,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .dl,
+  .highlight .sd,
+  .highlight .s2,
+  .highlight .sh,
+  .highlight .sx,
+  .highlight .s1 {
     color: #79740e;
     font-style: italic;
   }
@@ -103,7 +124,14 @@ div.highlighter-rouge {
   .highlight .na {
     color: #79740e;
   }
-  .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  .highlight .m,
+  .highlight .mb,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .il,
+  .highlight .mo,
+  .highlight .mx {
     color: #8f3f71;
   }
   .highlight .ss {
@@ -112,13 +140,19 @@ div.highlighter-rouge {
 }
 
 @mixin dark-code-colors {
-  .highlight table td { padding: 5px; }
-  .highlight table pre { margin: 0; }
-  .highlight, .highlight .w {
-    color: #c9d1d9;
-    background-color: #161b22;
+  .highlight table td {
+    padding: 5px;
   }
-  .highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .kv {
+  .highlight table pre {
+    margin: 0;
+  }
+  .highlight .k,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kt,
+  .highlight .kv {
     color: #ff7b72;
   }
   .highlight .gr {
@@ -156,7 +190,16 @@ div.highlighter-rouge {
   .highlight .kc {
     color: #79c0ff;
   }
-  .highlight .l, .highlight .ld, .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  .highlight .l,
+  .highlight .ld,
+  .highlight .m,
+  .highlight .mb,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .il,
+  .highlight .mo,
+  .highlight .mx {
     color: #79c0ff;
   }
   .highlight .sb {
@@ -174,10 +217,15 @@ div.highlighter-rouge {
   .highlight .py {
     color: #79c0ff;
   }
-  .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm {
+  .highlight .nv,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi,
+  .highlight .vm {
     color: #79c0ff;
   }
-  .highlight .o, .highlight .ow {
+  .highlight .o,
+  .highlight .ow {
     color: #79c0ff;
   }
   .highlight .gh {
@@ -188,20 +236,38 @@ div.highlighter-rouge {
     color: #1f6feb;
     font-weight: bold;
   }
-  .highlight .s, .highlight .sa, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .sx, .highlight .s1, .highlight .ss {
+  .highlight .s,
+  .highlight .sa,
+  .highlight .sc,
+  .highlight .dl,
+  .highlight .sd,
+  .highlight .s2,
+  .highlight .se,
+  .highlight .sh,
+  .highlight .sx,
+  .highlight .s1,
+  .highlight .ss {
     color: #a5d6ff;
   }
   .highlight .nd {
     color: #d2a8ff;
   }
-  .highlight .nf, .highlight .fm {
+  .highlight .nf,
+  .highlight .fm {
     color: #d2a8ff;
   }
   .highlight .err {
     color: #f0f6fc;
     background-color: #8e1519;
   }
-  .highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cp, .highlight .cpf, .highlight .c1, .highlight .cs {
+  .highlight .c,
+  .highlight .ch,
+  .highlight .cd,
+  .highlight .cm,
+  .highlight .cp,
+  .highlight .cpf,
+  .highlight .c1,
+  .highlight .cs {
     color: #8b949e;
   }
   .highlight .gl {
