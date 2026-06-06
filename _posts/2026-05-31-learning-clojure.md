@@ -198,3 +198,22 @@ Once I got here, I went through the solution expression by expression to make su
 In this particular case, it was interesting to compare the source for `partition` ([GitHub](https://github.com/clojure/clojure/blob/8ae9e4f95e2fbbd4ee4ee3c627088c45ab44fa68/src/clj/clojure/core.clj#L3202)) and `partition-by` ([GitHub](https://github.com/clojure/clojure/blob/8ae9e4f95e2fbbd4ee4ee3c627088c45ab44fa68/src/clj/clojure/core.clj#L7308)). 
 
 And that’s how we learn!
+
+---
+
+Update: [Niki Tonsky](https://tonsky.me), in [a Mastodon reply](https://mastodon.online/@nikitonsky/116703676644785204), pointed out that the last `reduce` could be replaced with an application of `max-key`:
+
+
+```clojure
+(fn [xs]
+  (->> (partition 2 1 xs)
+    (partition-by (fn [[a b]] (< a b)))
+    (filter #(apply < (first %)))
+    (map (fn [g] (cons (ffirst g) (map second g))))
+    reverse
+    (apply max-key count [])))
+```
+
+The `reverse` is necessary because the problem statement says that if we have more than one subsequences that are the longest, the first one should be returned; `max-key`, however, will return the last.
+
+Also take a look at Niki’s [beautiful sliding window implementation](https://mastodon.online/@nikitonsky/116703643563572387)!
