@@ -27,12 +27,15 @@ Another talk I liked was on brain/computer interfaces, by [Lorelai Lyons](https:
 
 On the way home from the conference, I made this post on my socials:
 
-<blockquote lang="en" cite="https://merveilles.town/@gosha/114574818156410355" data-source="fediverse">
-  <p>A day at <a href="https://merveilles.town/tags/reClojure" class="mention hashtag" rel="tag">#<span>reClojure</span></a>, listening to inspiring talks &amp; talking to inspiring nerds, made me realise just how burnt out I am on the whole field of CRUD-adjacent webdev. I feel I need some kind of reset, to start working on more challenging, more meaningful problems 🤔</p>
-  <footer>
-     — gosha 🏴‍☠️ (@gosha@merveilles.town) <a href="https://merveilles.town/@gosha/114574818156410355"><time datetime="2025-05-26T15:23:02.125Z">26/05/2025, 16:23:02</time></a>
-  </footer>
-</blockquote>
+{% capture toot_content %}
+<p>A day at <a href="https://merveilles.town/tags/reClojure" class="mention hashtag" rel="tag">#<span>reClojure</span></a>, listening to inspiring talks &amp; talking to inspiring nerds, made me realise just how burnt out I am on the whole field of CRUD-adjacent webdev. I feel I need some kind of reset, to start working on more challenging, more meaningful problems 🤔</p>
+{% endcapture %}
+{% include mastodon_post.html
+   url="https://merveilles.town/@gosha/114574818156410355"
+   author="gosha 🏴‍☠️"
+   handle="gosha@merveilles.town"
+   date="2025-05-26T15:23:02.125Z"
+   content=toot_content %}
 
 This wasn’t nothing. Everyone who gave talks (or just showed up) brought this infectious kind of energy, the energy of people who care about their work, deeply. It made me realise that I need a lot more of this energy in my own life.
 

@@ -49,7 +49,6 @@
   aside {
     max-width: var(--max-width);
     margin: 2rem auto;
-
   }
   .video {
     max-width: var(--max-width);
@@ -153,20 +152,122 @@ aside.comments {
   margin-top: 4rem;
 }
 
-blockquote[data-source="fediverse"] {
-  background-image: url(/assets/images/icons/mastodon-avatar.png);
-  background-size: 2.5rem 2.5rem;
-  background-repeat: no-repeat;
-  background-position: 1rem 1rem;
+blockquote[data-source="fediverse"],
+mastodon-post figure {
+  position: relative;
   background-color: var(--color-strong-bg);
   padding: 1rem;
   padding-left: 4rem;
   border-radius: 1rem;
   border: 0px;
 
+  .avatar {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+
+  .author-name {
+    font-family: var(--font-mono);
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .author-handle {
+    font-family: var(--font-mono);
+    font-weight: normal;
+    color: var(--color-text-subdued);
+    text-decoration: none;
+  }
+
   footer {
     margin: 1rem 0 0;
+    font-family: var(--font-mono);
+    font-size: var(--font-small);
+
+    a {
+      color: var(--color-text-subdued);
+      text-decoration: none;
+    }
   }
+}
+
+blockquote[data-source="fediverse"] header {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  blockquote[data-source="fediverse"] footer,
+  mastodon-post figure footer {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+mastodon-post {
+  display: block;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 2rem auto;
+
+  figure {
+    margin: 0;
+
+    blockquote {
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+
+    figcaption {
+      margin: 0 0 0.5rem;
+
+      cite {
+        font-style: normal;
+      }
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.25rem 0.5rem;
+    }
+
+    dl {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0 0.25rem;
+      margin: 0;
+      color: var(--color-text-subdued);
+
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.125em;
+      }
+
+      dd {
+        margin: 0 0.5rem 0 0;
+      }
+    }
+
+    .post-date {
+      white-space: nowrap;
+    }
+  }
+}
+
+/* Links inside an embedded post shouldn't get the centered block treatment
+ * that `.blog article figure a` applies to image figures. */
+.blog article mastodon-post figure a {
+  display: inline;
+  text-align: inherit;
 }
 
 .blogroll {

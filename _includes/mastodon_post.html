@@ -1,0 +1,15 @@
+<mastodon-post>
+  <blockquote lang="{{ include.lang | default: 'en' }}" cite="{{ include.url }}" data-source="fediverse">
+    <img class="avatar" src="{{ include.avatar | default: '/assets/images/icons/mastodon-avatar.png' }}" alt="" />
+    {% assign handle_parts = include.handle | split: '@' %}
+    {% assign profile_url = 'https://' | append: handle_parts[1] | append: '/@' | append: handle_parts[0] %}
+    <header>
+      <a class="author-name" href="{{ profile_url }}">{{ include.author }}</a>
+      <a class="author-handle" href="{{ profile_url }}">@{{ include.handle }}</a>
+    </header>
+    {{ include.content }}
+    <footer>
+      <a href="{{ include.url }}"><time datetime="{{ include.date }}">{{ include.date | date: "%d/%m/%Y, %H:%M" }}</time></a>
+    </footer>
+  </blockquote>
+</mastodon-post>
