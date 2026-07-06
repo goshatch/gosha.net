@@ -9,9 +9,7 @@ date: 2024-01-09
 ASTROVOX is an experimental software project aimed at playing with sound
 generation.
 
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/8iqiGaBeByc?si=HHoovh1WyLdKpInI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+{% include youtube.html id="8iqiGaBeByc" %}
 
 The original goal was to write an approximate software emulation of the Roland
 [Juno-60](https://en.wikipedia.org/wiki/Roland_Juno-60) synthesizer (as used by
