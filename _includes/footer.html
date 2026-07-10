@@ -69,6 +69,10 @@
       {% include conway.svg %}
     </div>
   </div>
-  {% assign lyric = site.data.lyrics | sample: 1 %}
+  {% if page.lyric %}
+    {% assign lyric = page.lyric %}
+  {% else %}
+    {% assign lyric = site.data.lyrics | sample: 1 %}
+  {% endif %}
   <p class="motto">{{ lyric }}</p>
 </footer>
