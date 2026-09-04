@@ -17,7 +17,7 @@
     <div class="content-container">
       <div class="content">
         {% include navigation.html %}
-        <main class="{{ active }} {{ page.slug }}">
+        <main class="{{ active }} {{ page.slug }} {{ layout.subtype }}">
           {{ content | safe }}
         </main>
         <hr />

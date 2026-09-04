@@ -18,6 +18,57 @@
   }
 }
 
+.with-side-nav {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, var(--max-width)) 1fr;
+  column-gap: 2rem;
+
+  > * {
+    grid-column: 2;
+  }
+  .full-width-photos .photo {
+    flex: 1;
+    img {
+      width: 100%;
+    }
+  }
+  > .side-nav {
+    grid-column: 1;
+    margin-top: 1rem; // matches the figure top margin so the title sits level with the photo
+    justify-self: end;
+    align-self: start;
+    position: sticky;
+    top: 4.75rem; // ponytail: h1 line box + h1 margin-bottom + nav margin-top, so it pins the moment the title hits the viewport top
+    &.bottom {
+      display: none;
+    }
+    .parent-project {
+      font-weight: bold;
+      .arrow {
+        display: inline-block; // keeps the link underline off the arrow
+        margin-right: 0.3em;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .with-side-nav {
+    grid-template-columns: 1fr;
+    > *,
+    > .side-nav {
+      grid-column: 1;
+    }
+    > .side-nav {
+      position: static;
+      justify-self: stretch;
+      &.bottom {
+        display: block;
+      }
+    }
+  }
+}
+
 section.gallery {
   display: grid;
   grid-template-columns: 1fr;
@@ -208,33 +259,13 @@ section.gallery {
   }
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-
-  figure {
-    display: block;
-    margin: 0px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
 @media (min-width: 481px) and (max-width: 1025px) {
-  .projects-grid,
-  .gallery-grid {
+  .projects-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 480px) {
-  .projects-grid,
-  .gallery-grid {
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 }

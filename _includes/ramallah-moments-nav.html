@@ -1,0 +1,17 @@
+<nav class="side-nav{% if include.bottom %} bottom{% endif %}">
+  {%- if page.parent_project %}
+  <p class="parent-project">
+    <a href="/projects/{{ page.parent_project.slug }}"><span class="arrow">&larr;</span>{{ page.parent_project.title }}</a>
+  </p>
+  {%- endif %}
+  <ol>
+    {%- for moment in site.data.ramallah_moments %}
+    {%- assign url = "/projects/ramallah-moments/" | append: moment.slug | append: "/" %}
+    {%- if page.url == url %}
+    <li>{{ moment.title }}</li>
+    {%- else %}
+    <li><a href="{{ url }}">{{ moment.title }}</a></li>
+    {%- endif %}
+    {%- endfor %}
+  </ol>
+</nav>
