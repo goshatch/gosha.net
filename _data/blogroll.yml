@@ -1,74 +1,99 @@
 ---
 links:
-- name: anhvn
-  url: https://anhvn.com/blog/
-  favicon: anhvn.png
-- name: but she’s a girl…
-  url: https://www.rousette.org.uk/
-  favicon: but-shes-a-girl.ico
-- name: Chris Glass
-  url: https://chrisglass.com/
-  favicon: chris-glass.png
-- name: Derek Wessman’s blog
-  url: https://www.derekwessman.com/
-  favicon: derek-wessmans-blog.ico
-- name: Geoffrey Litt
-  url: https://www.geoffreylitt.com/
-  favicon: geoffrey-litt.ico
-- name: gwil’s garden
-  url: https://gwil.garden/
-  favicon: gwils-garden.png
-- name: EvalApply
-  url: https://www.evalapply.org/posts/
-  favicon: evalapply.ico
-- name: Klingsor’s First Winter
-  url: https://klingsorsfirstwinter.com/
-  favicon: klingsors-first-winter.ico
-- name: kwon.nyc
-  url: https://kwon.nyc/
-- name: Longest Voyage
-  url: https://longest.voyage/
-  favicon: longest-voyage.png
-- name: Mu-An Chiou
-  url: https://muan.co/
-  favicon: mu-an-chiou.png
-- name: mx3m
-  url: https://mx3m.xyz/
-- name: Naz Hamid
-  url: https://nazhamid.com/
-  favicon: naz-hamid.png
-- name: nchrs
-  url: https://nchrs.xyz/journal.html
-  favicon: nchrs.png
-- name: Oatmeal
-  url: https://eli.li/
-  favicon: oatmeal.jpg
-- name: Piper Haywood
-  url: https://piperhaywood.com/
-  favicon: piper-haywood.jpg
-- name: POSITIVO ESPRESSO
-  url: https://positivo-espresso.blogspot.com/
-  favicon: positivo-espresso.ico
-- name: Ratfactor
-  url: https://ratfactor.com/
-  favicon: ratfactor.png
-- name: Robert Heaton
-  url: https://robertheaton.com/
-  favicon: robert-heaton.png
-- name: Thomasorus
-  url: https://thomasorus.com/journal
-- name: Niki Tonsky
-  url: https://tonsky.me/
-  favicon: niki-tonsky.png
-- name: Vlad’s Website
-  url: https://vlad.website/
-  favicon: vlads-website.png
-- name: Watarisme
-  url: https://watarisme.wordpress.com/
-  favicon: watarisme.png
-- name: Tomomi’s Weeknotes
-  url: https://www.ripplet.org/weeknotes
-  favicon: tomomis-weeknotes.ico
-- name: Winnie Lim
-  url: https://winnielim.org/
-  favicon: winnie-lim.ico
+  - name: anhvn
+    url: https://anhvn.com/blog/
+    feed: https://anhvn.com/feed.xml
+    favicon: anhvn.png
+  - name: but she’s a girl…
+    url: https://www.rousette.org.uk/
+    feed: https://www.rousette.org.uk/feed.xml
+    favicon: but-shes-a-girl.ico
+  - name: Chris Glass
+    url: https://chrisglass.com/
+    feed: https://chrisglass.com/feed
+    favicon: chris-glass.png
+  - name: Derek Wessman’s blog
+    url: https://www.derekwessman.com/
+    feed: https://www.derekwessman.com/blog-1?format=rss
+    favicon: derek-wessmans-blog.ico
+  - name: Geoffrey Litt
+    url: https://www.geoffreylitt.com/
+    feed: https://www.geoffreylitt.com/feed.xml
+    favicon: geoffrey-litt.ico
+  - name: gwil’s garden
+    url: https://gwil.garden/
+    feed: https://gwil.garden/rss/posts.xml
+    favicon: gwils-garden.png
+  - name: EvalApply
+    url: https://www.evalapply.org/posts/
+    feed: https://www.evalapply.org/index.xml
+    favicon: evalapply.ico
+  - name: Klingsor’s First Winter
+    url: https://klingsorsfirstwinter.com/
+    feed: https://klingsorsfirstwinter.com/feed/
+    favicon: klingsors-first-winter.ico
+  - name: kwon.nyc
+    url: https://kwon.nyc/
+    feed: https://kwon.nyc/index.xml
+  - name: Longest Voyage
+    url: https://longest.voyage/
+    feed: https://longest.voyage/index.xml
+    favicon: longest-voyage.png
+  - name: Mu-An Chiou
+    url: https://muan.co/
+    feed: https://muan.co/feed.xml
+    favicon: mu-an-chiou.png
+  - name: mx3m
+    url: https://mx3m.xyz/
+    feed: https://mx3m.xyz/feed.xml
+  - name: Naz Hamid
+    url: https://nazhamid.com/
+    feed: https://nazhamid.com/feed.xml
+    favicon: naz-hamid.png
+  - name: nchrs
+    url: https://nchrs.xyz/journal.html
+    feed: https://nchrs.xyz/rss.xml
+    favicon: nchrs.png
+  - name: Oatmeal
+    url: https://eli.li/
+    feed: https://eli.li/feed.rss
+    favicon: oatmeal.jpg
+  - name: Piper Haywood
+    url: https://piperhaywood.com/
+    feed: https://piperhaywood.com/feed/
+    favicon: piper-haywood.jpg
+  - name: POSITIVO ESPRESSO
+    url: https://positivo-espresso.blogspot.com/
+    feed: https://positivo-espresso.blogspot.com/feeds/posts/default
+    favicon: positivo-espresso.ico
+  - name: Ratfactor
+    url: https://ratfactor.com/
+    feed: https://ratfactor.com/atom.xml
+    favicon: ratfactor.png
+  - name: Robert Heaton
+    url: https://robertheaton.com/
+    feed: https://robertheaton.com/feed.xml
+    favicon: robert-heaton.png
+  - name: Thomasorus
+    url: https://thomasorus.com/journal
+    feed: https://thomasorus.com/feed
+  - name: Niki Tonsky
+    url: https://tonsky.me/
+    feed: https://tonsky.me/atom.xml
+    favicon: niki-tonsky.png
+  - name: Vlad’s Website
+    url: https://vlad.website/
+    feed: https://vlad.website/index.xml
+    favicon: vlads-website.png
+  - name: Watarisme
+    url: https://watarisme.wordpress.com/
+    feed: https://watarisme.wordpress.com/feed/
+    favicon: watarisme.png
+  - name: Tomomi’s Weeknotes
+    url: https://www.ripplet.org/weeknotes
+    feed: https://www.ripplet.org/weeknotes/rss.xml
+    favicon: tomomis-weeknotes.ico
+  - name: Winnie Lim
+    url: https://winnielim.org/
+    feed: https://winnielim.org/feed/
+    favicon: winnie-lim.ico

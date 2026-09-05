@@ -1,0 +1,15 @@
+---
+permalink: /blog/blogroll.opml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>{{ site.title }}’s blogroll</title>
+    <ownerName>{{ site.author }}</ownerName>
+    <ownerId>{{ site.url }}</ownerId>
+  </head>
+  <body>
+    {% for link in site.data.blogroll.links %}{% if link.feed %}<outline type="rss" text="{{ link.name | xml_escape }}" title="{{ link.name | xml_escape }}" xmlUrl="{{ link.feed | xml_escape }}" htmlUrl="{{ link.url | xml_escape }}" />
+    {% endif %}{% endfor %}
+  </body>
+</opml>
