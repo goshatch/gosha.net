@@ -3,7 +3,7 @@ layout: post
 title: "Simplifying how I work with photos"
 date: 2025-05-03 09:50:21 +0800
 location: New Taipei City
-categories: ['photography', 'taiwan', 'travel', 'captureone', 'ricoh gr III', ’simplify’]
+categories: ['photography', 'taiwan', 'travel', 'captureone', 'ricoh gr III', 'simplify']
 summary: "I really do not need to cosplay as a Real Professional Photographer"
 featured_image: /assets/images/posts/2025/photo-workflow/danbing.jpg
 ---
