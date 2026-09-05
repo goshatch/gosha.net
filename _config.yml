@@ -42,6 +42,7 @@ mastodon:
 
 # Build settings
 plugins:
+  - jekyll-archives
   - jekyll-feed
   - jekyll-autoprefixer
   - jekyll-figure
@@ -75,3 +76,9 @@ feed:
   collections:
     projects:
       path: "/projects/feed.xml"
+
+jekyll-archives:
+  enabled: [categories]
+  layout: category
+  permalinks:
+    category: '/blog/index/:name/'

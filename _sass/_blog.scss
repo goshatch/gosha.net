@@ -19,6 +19,20 @@
       bottom: 0.3rem;
       color: var(--color-text);
     }
+    .header-links {
+      font-size: 1rem;
+      font-weight: normal;
+      position: absolute;
+      right: 0;
+      bottom: 0.3rem;
+      a {
+        color: var(--color-text);
+      }
+      .rss-link {
+        position: static;
+        margin-left: 1rem;
+      }
+    }
   }
 }
 
@@ -287,5 +301,43 @@ mastodon-post {
     color: var(--color-bg);
     border-radius: 10rem;
     text-transform: uppercase;
+  }
+}
+
+.termindex {
+  width: 100%;
+  header {
+    margin-bottom: 2rem;
+  }
+  h1,
+  h2,
+  ol {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .terms {
+    columns: 11rem auto;
+    column-gap: 2rem;
+  }
+  .termgroup {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  ol {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding: 0;
+    margin-left: 1rem;
+    text-indent: -1rem;
+  }
+  .count {
+    color: var(--color-text-subdued);
+    margin-left: 0.5rem;
   }
 }

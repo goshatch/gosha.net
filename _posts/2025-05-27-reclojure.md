@@ -3,7 +3,7 @@ layout: post
 title: "reClojure 2025"
 date: 2025-05-27 09:48:53 +0100
 location: London
-categories: ['clojure', 'conference', 'programming', 'socialising', 'reflection', 'london']
+categories: ['clojure', 'conference', 'programming', 'socialising', 'reflections', 'london']
 summary: "Reflecting on my first Clojure conference"
 featured_image: /assets/images/posts/2025/reclojure/featured.png
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Nine months of parenting"
 date: 2023-03-04 12:00:00 +0000
 location: London
-categories: ['parenting', 'reflections', 'n', 'family']
+categories: ['parenting', 'reflections', 'n', 'family', 'kids']
 summary: "It’s now been over nine months since N. was born. I wanted then to write down some observations about this time, and things I have noticed about myself in my new role as a father."
 featured_image: /assets/images/posts/2023/parenting/01.jpg
 ---

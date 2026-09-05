@@ -1,0 +1,30 @@
+---
+layout: base
+active: blog
+title: Blog index
+permalink: /blog/index/
+---
+{% assign names = "" %}
+{% for category in site.categories %}{% assign names = names | append: category[0] | append: "|" %}{% endfor %}
+{% assign names = names | split: "|" | sort_natural %}
+<section class="termindex">
+  <header>
+    <h1>Index</h1>
+    <div class="meta">Every topic across {{ site.posts | size }} <a href="/blog">blog posts</a>.</div>
+  </header>
+  <div class="terms">
+  {% assign letter = "" %}
+  {% for name in names %}
+    {% assign initial = name | slice: 0 | upcase %}
+    {% if initial != letter %}
+      {% assign letter = initial %}
+      {% unless forloop.first %}</ol></div>{% endunless %}
+      <div class="termgroup">
+      <h2>{{ letter }}</h2>
+      <ol>
+    {% endif %}
+    <li><a href="/blog/index/{{ name | slugify }}/">{{ name }}</a> <span class="count">{{ site.categories[name] | size }}</span></li>
+  {% endfor %}
+  </ol></div>
+  </div>
+</section>

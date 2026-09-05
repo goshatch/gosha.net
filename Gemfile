@@ -11,6 +11,7 @@ gem 'webrick'
 
 group :jekyll_plugins do
   gem 'jekyll-autoprefixer', git: 'https://github.com/chlorenz/jekyll-autoprefixer.git'
+  gem 'jekyll-archives'
   gem 'jekyll-feed', '~> 0.12'
   gem 'jekyll-figure'
   gem 'jekyll-mastodon_webfinger'

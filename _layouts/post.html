@@ -17,6 +17,9 @@ active: blog
     </aside>
   {% endif %}
   {{ content }}
+  <footer>
+    <p class="meta">Tagged: {% for category in page.categories %}<a href="/blog/index/{{ category | slugify }}/">{{ category }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+  </footer>
 </article>
 <aside class="comments">
   {% if page.mastodon_post %}
