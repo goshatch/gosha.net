@@ -32,13 +32,13 @@ meta:
   theme_color_dark: "#000"
   twitter_card_type: "summary"
   twitter: "@goshatch"
-  mastodon: "@gosha@merveilles.town"
+  mastodon: "@gosha@gosha.net"
   github_username: "goshatch"
   default_social_image: "/assets/images/default_social.png"
 
 mastodon:
   username: gosha
-  instance: merveilles.town
+  instance: fedi.gosha.net
 
 # Build settings
 plugins:
@@ -81,4 +81,4 @@ jekyll-archives:
   enabled: [categories]
   layout: category
   permalinks:
-    category: '/blog/index/:name/'
+    category: "/blog/index/:name/"
