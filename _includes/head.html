@@ -4,51 +4,78 @@
      code is available on GitHub: https://github.com/goshatch/gosha.net,
      and you're very welcome to email me with any questions: mail@gosha.net -->
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="{{ site.meta.theme_color_light }}" />
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="{{ site.meta.theme_color_dark }}" />
-<base href="{{ page.url }}">
-<meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
-<meta name="robots" content="index,follow">
-<meta name="googlebot" content="index,follow">
-<meta name="google" content="nositelinkssearchbox">
-<meta name="generator" content="Jekyll 4.3">
-<meta name="format-detection" content="telephone=no">
-<meta name="color-scheme" content="light dark">
-<link rel="canonical" href="{{ site.url }}{{ page.url }}">
-<title>{% if page.title %}{{ page.title }} → {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta
+  name="theme-color"
+  media="(prefers-color-scheme: light)"
+  content="{{ site.meta.theme_color_light }}"
+/>
+<meta
+  name="theme-color"
+  media="(prefers-color-scheme: dark)"
+  content="{{ site.meta.theme_color_dark }}"
+/>
+<base href="{{ page.url }}" />
+<meta
+  name="description"
+  content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}"
+/>
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+<meta name="google" content="nositelinkssearchbox" />
+<meta name="generator" content="Jekyll 4.3" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="color-scheme" content="light dark" />
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<title>
+  {% if page.title %}{{ page.title }} → {{ site.title }}{% else %}{{ site.title
+  }}{% endif %}
+</title>
 <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png" />
-<link rel="author" href="/humans.txt">
-<link rel="icon" sizes="192x192" href="/assets/images/favicon.png">
+<link rel="author" href="/humans.txt" />
+<link rel="icon" sizes="192x192" href="/assets/images/favicon.png" />
+<link rel="me" href="https://fedi.gosha.net/users/gosha" />
 {% if page.redirect %}
-<meta http-equiv="refresh" content="0; url={{ page.redirect }}">
+<meta http-equiv="refresh" content="0; url={{ page.redirect }}" />
 <link rel="canonical" href="{{ page.redirect }}" />
 {% endif %}
-<meta property="og:url" content="{{ site.url}}{{ page.url }}">
-<meta property="og:type" content="website">
-<meta property="og:title"
-  content="{% if page.title %}{{ page.title }} → {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:url" content="{{ site.url}}{{ page.url }}" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="{% if page.title %}{{ page.title }} → {{ site.title }}{% else %}{{ site.title }}{% endif %}"
+/>
 {% if site.meta.default_social_image or page.featured_image %}
-<meta property="og:image"
-  content="{{ site.url}}{% if page.featured_image  %}{{ page.featured_image }}{% else %}{{ site.meta.default_social_image }}{% endif %}" />
+<meta
+  property="og:image"
+  content="{{ site.url}}{% if page.featured_image  %}{{ page.featured_image }}{% else %}{{ site.meta.default_social_image }}{% endif %}"
+/>
 {% endif %}
-<meta property="og:description"
-  content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}" />
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:locale" content="en_GB">
-<meta property="article:author" content="{{ site.author }}">
-<meta name="twitter:card" content="{{ site.meta.twitter_card_type }}">
-<meta name="twitter:site" content="{{ site.meta.twitter }}">
-<meta name="twitter:creator" content="{{ site.meta.twitter }}">
-<meta name="fediverse:creator" content="{{ site.meta.mastodon }}">
-<meta name="twitter:url" content="{{ site.url}}{{ page.url }}">
-<meta name="twitter:title"
-  content="{% if page.title %}{{ page.title }} → {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="twitter:description"
-  content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
+<meta
+  property="og:description"
+  content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}"
+/>
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:locale" content="en_GB" />
+<meta property="article:author" content="{{ site.author }}" />
+<meta name="twitter:card" content="{{ site.meta.twitter_card_type }}" />
+<meta name="twitter:site" content="{{ site.meta.twitter }}" />
+<meta name="twitter:creator" content="{{ site.meta.twitter }}" />
+<meta name="fediverse:creator" content="{{ site.meta.mastodon }}" />
+<meta name="twitter:url" content="{{ site.url}}{{ page.url }}" />
+<meta
+  name="twitter:title"
+  content="{% if page.title %}{{ page.title }} → {{ site.title }}{% else %}{{ site.title }}{% endif %}"
+/>
+<meta
+  name="twitter:description"
+  content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}"
+/>
 {% if site.meta.default_social_image or page.featured_image %}
-<meta name="twitter:image"
-  content="{{ site.url}}{% if page.featured_image  %}{{ page.featured_image }}{% else %}{{ site.meta.default_social_image }}{% endif %}">
+<meta
+  name="twitter:image"
+  content="{{ site.url}}{% if page.featured_image  %}{{ page.featured_image }}{% else %}{{ site.meta.default_social_image }}{% endif %}"
+/>
 {% endif %}
-<meta name="twitter:dnt" content="on">
+<meta name="twitter:dnt" content="on" />
