@@ -3,7 +3,7 @@ layout: post
 title: "Ruby: sane sorbet-ls setup in Emacs"
 date: 2025-05-14 21:43:13 +0100
 location: London
-categories: ['programming', 'emacs', 'doom', 'sorbet', 'sorbet-ls', 'lsp', 'ruby', 'rails']
+categories: ['programming', 'emacs', 'doom', 'sorbet', 'sorbet-ls', 'lsp', 'ruby', 'rails', 'technical']
 summary: "Conditionally loading Sorbet LSP in Emacs with Doom and lsp-mode"
 ---
 I’m generally not a huge fan of static type checking, so I do not use [Sorbet](https://sorbet.org/) in my personal Ruby and Rails projects. At work, however, we do use it: our project includes Sorbet in its `Gemfile`.

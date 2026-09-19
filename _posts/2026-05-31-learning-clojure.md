@@ -3,7 +3,7 @@ layout: post
 title: "How I learn Clojure"
 date: 2026-05-31 09:48:53 +0100
 location: London
-categories: ['clojure', 'programming', 'process', 'learning']
+categories: ['clojure', 'programming', 'process', 'learning', 'technical']
 summary: "Combining 4clojure, the clojure.core docs, and the Clojure source code"
 ---
 
@@ -193,9 +193,9 @@ So the final version of the function looks like this:
 ```
 
 
-Once I got here, I went through the solution expression by expression to make sure that I understand *why* exactly it’s working. I’d look up each function I’m not completely familiar with, reading the source of each, in addition to the docs. 
+Once I got here, I went through the solution expression by expression to make sure that I understand *why* exactly it’s working. I’d look up each function I’m not completely familiar with, reading the source of each, in addition to the docs.
 
-In this particular case, it was interesting to compare the source for `partition` ([GitHub](https://github.com/clojure/clojure/blob/8ae9e4f95e2fbbd4ee4ee3c627088c45ab44fa68/src/clj/clojure/core.clj#L3202)) and `partition-by` ([GitHub](https://github.com/clojure/clojure/blob/8ae9e4f95e2fbbd4ee4ee3c627088c45ab44fa68/src/clj/clojure/core.clj#L7308)). 
+In this particular case, it was interesting to compare the source for `partition` ([GitHub](https://github.com/clojure/clojure/blob/8ae9e4f95e2fbbd4ee4ee3c627088c45ab44fa68/src/clj/clojure/core.clj#L3202)) and `partition-by` ([GitHub](https://github.com/clojure/clojure/blob/8ae9e4f95e2fbbd4ee4ee3c627088c45ab44fa68/src/clj/clojure/core.clj#L7308)).
 
 And that’s how we learn!
 

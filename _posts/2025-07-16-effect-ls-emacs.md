@@ -3,7 +3,7 @@ layout: post
 title: "Effect: using effect-language-service in Emacs"
 date: 2025-07-16 13:31:13 +0100
 location: London
-categories: ['programming', 'emacs', 'doom', 'effect', 'effect-ts', 'effect-language-service', 'lsp', 'typescript']
+categories: ['programming', 'emacs', 'doom', 'effect', 'effect-ts', 'effect-language-service', 'lsp', 'typescript', 'technical']
 summary: "From the We Are Not Worse Than VSCode department"
 ---
 In my last [lsp-related post](/2025/sorbet-emacs), I wrote that I wasn’t a huge fan of static type checking. Well, that’s changed: I’ve tried Haskell (by building [a simple Scheme implementation](https://github.com/goshatch/ploy)), and more recently, as part of a series of job interviews, I learned about [Effect](https://effect.website).
