@@ -18,6 +18,9 @@
             ruby_3_4
             bundler
 
+            # markdown lsp
+            marksman
+
             # For native extensions
             libxml2
             libxslt
