@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="m">
+  <!-- The m is drawn rather than set as text: a favicon has no access to the
+       site's own font, and every system would otherwise pick a different
+       monospace and a different letterform. Square ends and tight shoulders,
+       closer to the site's monospace than a pair of round arches. Colours
+       follow the reader's system preference, using the site's own background
+       and link colours in each theme. -->
+  <style>
+    .bg { fill: #fafafa; }
+    .m  { stroke: #0d0d0d; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #111111; }
+      .m  { stroke: #fafafa; }
+    }
+  </style>
+  <rect class="bg" width="32" height="32"/>
+  <path class="m" fill="none" stroke-width="3" stroke-linecap="butt" stroke-linejoin="miter"
+        d="M8 22V10H13.5Q16 10 16 12.5V22M16 12.5Q16 10 18.5 10H21.5Q24 10 24 12.5V22"/>
+</svg>
